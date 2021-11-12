@@ -105,18 +105,18 @@ button img {
   vertical-align: middle;
 }
 
-input[type=text] {
+input[type="text"] {
   border: 1px solid #333;
   outline: 0;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   outline: 0;
   opacity: 0;
 }
 
-input[type=search]::-ms-clear,
-input[type=search]::-ms-reveal {
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
   display: none;
   width: 0;
   height: 0;
@@ -138,7 +138,7 @@ select,
 textarea,
 button,
 input {
-  font-family: 'Lato', 'Noto Sans KR', sans-serif;
+  font-family: "Lato", "Noto Sans KR", sans-serif;
 }
 
 .blind {
@@ -163,7 +163,7 @@ input {
 
 .clearfix:before,
 .clearfix:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
@@ -259,7 +259,7 @@ input {
   display: block;
   width: 120%;
   height: 150%;
-  background: #A4000C;
+  background: #a4000c;
   transform: skew(-20deg);
   transition: all 0.5s;
 }
@@ -270,7 +270,7 @@ input {
 
 .btn--style:hover:before {
   left: -10%;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .btnSmall {
@@ -438,7 +438,7 @@ input {
 
 /* table_st3 */
 .table_st3 tr:first-child {
-  border-top: 1px solid #A4000C;
+  border-top: 1px solid #a4000c;
   border-bottom: 1px solid #ccc;
 }
 
@@ -490,8 +490,8 @@ input {
   color: #333;
 }
 
-.table_st4 td input[type=text],
-.table_st4 td input[type=password],
+.table_st4 td input[type="text"],
+.table_st4 td input[type="password"],
 .table_st4 td select {
   width: 40%;
   height: 2.18em;
@@ -502,8 +502,8 @@ input {
   line-height: 2.06em;
 }
 
-.table_st4 td input[type=text]:focus,
-.table_st4 td input[type=password]:focus {
+.table_st4 td input[type="text"]:focus,
+.table_st4 td input[type="password"]:focus {
   background: #fafafa;
   border-color: #7c7f92;
 }
@@ -538,8 +538,8 @@ input {
   color: #333;
 }
 
-.table_st5 td input[type=text],
-.table_st5 td input[type=password],
+.table_st5 td input[type="text"],
+.table_st5 td input[type="password"],
 .table_st5 td select {
   width: 60%;
   height: 2.18em;
@@ -551,8 +551,8 @@ input {
   line-height: 1.8;
 }
 
-.table_st5 td input[type=text]:focus,
-.table_st5 td input[type=password]:focus {
+.table_st5 td input[type="text"]:focus,
+.table_st5 td input[type="password"]:focus {
   background: #fafafa;
   border-color: #7c7f92;
 }
@@ -598,7 +598,7 @@ input {
 }
 
 .checksWrap_st1 label.on {
-  background: url("../_img/check2_on.png") 0 0 no-repeat
+  background: url("../_img/check2_on.png") 0 0 no-repeat;
 }
 
 .checksWrap_st2 {
@@ -660,7 +660,7 @@ input {
 }
 
 .inputWrap_st1:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 1px;
@@ -733,7 +733,7 @@ input {
 }
 
 .inputWrap_st2.icon:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -852,7 +852,7 @@ input {
 }
 
 .selectWrap_st1 .btn_selected:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1026,4 +1026,14 @@ input {
   font-size: 1.3rem;
   line-height: 1.6;
   white-space: pre-line;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: none !important;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: none !important;
 }

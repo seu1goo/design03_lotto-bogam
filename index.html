@@ -1,310 +1,569 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- title -->
+    <title>로또보감</title>
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="32x32"
+      href="./_img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/ico"
+      sizes="16x16"
+      href="./_img/favicon-16x16.png"
+    />
 
-  <!-- title -->
-  <title>로또보감</title>
-  <link rel="icon" type="image/ico" sizes="32x32" href="./_img/favicon-32x32.png">
-  <link rel="icon" type="image/ico" sizes="16x16" href="./_img/favicon-16x16.png">
+    <!-- reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
 
-  <!-- reset -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- font -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+KR:wght@400;500;700&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <!-- style -->
+    <link rel="stylesheet" href="./_css/common.css" />
+    <link rel="stylesheet" href="./_css/layout.css" />
+    <link rel="stylesheet" href="./_css/main.css" />
+    <link rel="stylesheet" href="./_css/common_reactive.css" />
+    <link rel="stylesheet" href="./_css/main_reacitve.css" />
 
-  <!-- style -->
-  <link rel="stylesheet" href="./_css/common.css" />
-  <link rel="stylesheet" href="./_css/layout.css" />
-  <link rel="stylesheet" href="./_css/main.css" />
-  <link rel="stylesheet" href="./_css/common_reactive.css" />
-  <link rel="stylesheet" href="./_css/main_reacitve.css" />
+    <!-- *jsLibrary -->
+    <!-- jQuery -->
+    <script src="./_js/jquery-3.5.1.min.js"></script>
+    <script src="./_js/jquery-ui.min.js"></script>
+    <!-- lodash -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- gsap -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+      integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
+      integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- scrollMagic -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+      integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+      crossorigin="anonymous"
+    ></script>
+    <!-- swiper -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="./_js/swiper.min.js"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css"
+      integrity="sha512-nSomje7hTV0g6A5X/lEZq8koYb5XZtrWD7GU2+aIJD35CePx89oxSM+S7k3hqNSpHajFbtmrjavZFxSEfl6pQA=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"
+      integrity="sha512-ZHauUc/vByS6JUz/Hl1o8s2kd4QJVLAbkz8clgjtbKUJT+AG1c735aMtVLJftKQYo+LD62QryvoNa+uqy+rCHQ=="
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- *jsLibrary -->
-  <!-- jQuery -->
-  <script src="./_js/jquery-3.5.1.min.js"></script>
-  <script src="./_js/jquery-ui.min.js"></script>
-  <!-- lodash -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
-    integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
-    crossorigin="anonymous"></script>
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
-    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollToPlugin.min.js"
-    integrity="sha512-9DDJWj17gkdeGHU0Zr76wc9jY2g0IwE7ZCIxakVYKyzlTiOWZDZJOTaVgAzNo+LB7+EbGXxwCXkOP+a5rgkuqQ=="
-    crossorigin="anonymous"></script>
-  <!-- scrollMagic -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
-    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
-    crossorigin="anonymous"></script>
-  <!-- swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <script src="./_js/swiper.min.js"></script>
+    <!-- script -->
+    <script defer src="./_js/common.js"></script>
+    <script defer src="./_js/main.js"></script>
+  </head>
 
-  <!-- script -->
-  <script defer src="./_js/common.js"></script>
-  <script defer src="./_js/main.js"></script>
-</head>
-
-<body>
-  <div id="wrap">
-    <header>
-      <div class="inner clearfix">
-        <div class="mobOpen">
-          <a href="javascript:void(0);">
-            <span class="material-icons">menu</span>
-          </a>
-        </div>
-        <h1 class="logo">
-          <a href="./index.html">
-            <img src="./_img/logo_header_w.png" alt="로또보감">
-          </a>
-        </h1>
-        <nav>
-          <ul class="gnb clearfix">
-            <li class="mobTit clearfix">
-              <p>로그인을 해주세요</p>
-              <div class="btnArea clearfix">
-                <a href="javascript:void(0);" class="mobHJoin">회원가입</a>
-                <a href="javascript:void(0);" class="mobClose">
-                  <span class="material-icons">close</span>
-                </a>
-              </div>
-            </li>
-            <li>
-              <a href="./system/introduction.html">넥스트시스템</a>
-            </li>
-            <li>
-              <a href="./premium/index.html">보감안내</a>
-            </li>
-            <li>
-              <a href="javascript:void(0);">분석자료</a>
-              <ul class="sub">
-                <li><a href="./analysis/statisticsTotal.html">누적 당첨 조합</a></li>
-                <li><a href="./analysis/statisticsPattern.html">당첨 조합 패턴</a></li>
-                <li><a href="./analysis/statisticsSpread.hmtl">당첨 조합 분포</a></li>
-                <li><a href="./analysis/statisticsSection.html">당첨 번호 구간</a></li>
-                <li><a href="./analysis/statisticsRanking.html">번호 배출 순위</a></li>
-                <li><a href="./analysis/statisticsSum.html">총합 분석</a></li>
-                <li><a href="./analysis/statisticsOddEven.html">홀/짝 통계</a></li>
-                <li><a href="./analysis/statisticsConti.html">연번 통계</a></li>
-                <li><a href="./analysis/statisticsHigh.html">고/저 통계</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:void(0);">당첨게시판</a>
-              <ul class="sub">
-                <li><a href="./win/memberFree.html">자유게시판</a></li>
-                <li><a href="./win/prizeTop.html">당첨게시판</a></li>
-              </ul>
-            </li>
-            <li><a href="./news/index.html">로또뉴스</a></li>
-            <li>
-              <a href="javascript:void(0);">마이페이지</a>
-              <ul class="sub">
-                <li><a href="./my/account.html">마이로또</a></li>
-                <li><a href="./my/combination.html">나의조합내역</a></li>
-                <li><a href="./my/sms.html">조합발송내역</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="javascript:void(0);">고객센터</a>
-              <ul class="sub">
-                <li><a href="./cs/notice.html">공지사항</a></li>
-                <li><a href="./cs/faq.html">자주하는질문</a></li>
-                <li><a href="./cs/consult.html">1:1문의</a></li>
-                <li><a href="./cs/spam.html">스팸처리</a></li>
-              </ul>
-            </li>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="inner clearfix">
+          <div class="mobOpen">
+            <a href="javascript:void(0);">
+              <span class="material-icons">menu</span>
+            </a>
+          </div>
+          <h1 class="logo">
+            <a href="./index.html">
+              <img src="./_img/logo_header_w.png" alt="로또보감" />
+            </a>
+          </h1>
+          <nav>
+            <ul class="gnb clearfix">
+              <li class="mobTit clearfix">
+                <p>로그인을 해주세요</p>
+                <div class="btnArea clearfix">
+                  <a href="javascript:void(0);" class="mobHJoin">회원가입</a>
+                  <a href="javascript:void(0);" class="mobClose">
+                    <span class="material-icons">close</span>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <a href="./system/introduction.html">넥스트시스템</a>
+              </li>
+              <li>
+                <a href="./premium/index.html">보감안내</a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">분석자료</a>
+                <ul class="sub">
+                  <li>
+                    <a href="./analysis/statisticsTotal.html">누적 당첨 조합</a>
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsPattern.html"
+                      >당첨 조합 패턴</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsSpread.hmtl"
+                      >당첨 조합 분포</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsSection.html"
+                      >당첨 번호 구간</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsRanking.html"
+                      >번호 배출 순위</a
+                    >
+                  </li>
+                  <li><a href="./analysis/statisticsSum.html">총합 분석</a></li>
+                  <li>
+                    <a href="./analysis/statisticsOddEven.html">홀/짝 통계</a>
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsConti.html">연번 통계</a>
+                  </li>
+                  <li>
+                    <a href="./analysis/statisticsHigh.html">고/저 통계</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);">당첨게시판</a>
+                <ul class="sub">
+                  <li><a href="./win/memberFree.html">자유게시판</a></li>
+                  <li><a href="./win/prizeTop.html">당첨게시판</a></li>
+                </ul>
+              </li>
+              <li><a href="./news/index.html">로또뉴스</a></li>
+              <li>
+                <a href="javascript:void(0);">마이페이지</a>
+                <ul class="sub">
+                  <li><a href="./my/account.html">마이로또</a></li>
+                  <li><a href="./my/combination.html">나의조합내역</a></li>
+                  <li><a href="./my/sms.html">조합발송내역</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="javascript:void(0);">고객센터</a>
+                <ul class="sub">
+                  <li><a href="./cs/notice.html">공지사항</a></li>
+                  <li><a href="./cs/faq.html">자주하는질문</a></li>
+                  <li><a href="./cs/consult.html">1:1문의</a></li>
+                  <li><a href="./cs/spam.html">스팸처리</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <ul class="tnb clearfix">
+            <li class="tnbLogin"><a href="./auth/login.html">로그인</a></li>
+            <li class="tnbJoin"><a href="./auth/join.html">회원가입</a></li>
+            <li class="tnbNotice"><a href="./cs/notice.html">공지사항</a></li>
           </ul>
-        </nav>
-        <ul class="tnb clearfix">
-          <li class="tnbLogin"><a href="./auth/login.html">로그인</a></li>
-          <li class="tnbJoin"><a href="./auth/join.html">회원가입</a></li>
-          <li class="tnbNotice"><a href="./cs/notice.html">공지사항</a></li>
-        </ul>
-      </div>
-    </header>
-    <!-- //header -->
+        </div>
+      </header>
+      <!-- //header -->
 
-    <section id="mainVisual">
-      <div class="swiper-container gallery-top">
-        <div class="swiper-wrapper">
-          <div class="visual visual-trust swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>로또보감은 회원님들과의 신뢰를 통해 성장합니다.</h3>
-                <h2>100% 로또 1등 <br> 당첨은 거짓입니다!</h2>
-                <p>
-                  로또보감의 상품은 동행복권 데이터를 기반으로 과거와 현재회차를 <br class="mobBr"> 종합하여<br />
-                  (고정수,연번,홀수,짝수,제외수) 정보를 제공해드리고있습니다.
-                </p>
-                <div class="visualBtn">
-                  <a href="./auth/join.html" class="btn btn--white">무료 번호 받기</a>
-                  <a href="./analysis/statisticsTotal.html" class="btn btn--white">분석 정보 보기</a>
-                  <a href="./event/falesite.html" class="btn btn--white">자세히 보기</a>
+      <section id="mainVisual">
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="visual visual-trust swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>로또보감은 회원님들과의 신뢰를 통해 성장합니다.</h3>
+                  <h2>
+                    100% 로또 1등 <br />
+                    당첨은 거짓입니다!
+                  </h2>
+                  <p>
+                    로또보감의 상품은 동행복권 데이터를 기반으로 과거와
+                    현재회차를 <br class="mobBr" />
+                    종합하여<br />
+                    (고정수,연번,홀수,짝수,제외수) 정보를 제공해드리고있습니다.
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./auth/join.html" class="btn btn--white"
+                      >무료 번호 받기</a
+                    >
+                    <a
+                      href="./analysis/statisticsTotal.html"
+                      class="btn btn--white"
+                      >분석 정보 보기</a
+                    >
+                    <a href="./event/falesite.html" class="btn btn--white"
+                      >자세히 보기</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-mem swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>당신의 꿈을 현실로 이뤄드립니다.</h3>
-                <h2>로또보감 상품안내</h2>
-                <p>
-                  로또보감만의 최적화된 시스템으로 <br />
-                  1등 당첨, <br class="mobBr"> 꿈이 아닌 현실로 만들어 드립니다.
-                </p>
-                <div class="visualBtn">
-                  <a href="./premium/index.html" class="btn btn--white">자세히 보기</a>
+            <div class="visual visual-mem swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>당신의 꿈을 현실로 이뤄드립니다.</h3>
+                  <h2>로또보감 상품안내</h2>
+                  <p>
+                    로또보감만의 최적화된 시스템으로 <br />
+                    1등 당첨, <br class="mobBr" />
+                    꿈이 아닌 현실로 만들어 드립니다.
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./premium/index.html" class="btn btn--white"
+                      >자세히 보기</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-news swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>명당부터 행운의 주인공까지</h3>
-                <h2>로또 뉴스</h2>
-                <p>
-                  동행복권과 관련된 동향 및 <br class="mobBr"> <br />
-                  최신 로또 뉴스를 한 눈에 확인해보세요.
-                </p>
-                <div class="visualBtn">
-                  <a href="./news/index.html" class="btn btn--white">뉴스 확인 하기</a>
+            <div class="visual visual-news swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>명당부터 행운의 주인공까지</h3>
+                  <h2>로또 뉴스</h2>
+                  <p>
+                    동행복권과 관련된 동향 및 <br class="mobBr" />
+                    <br />
+                    최신 로또 뉴스를 한 눈에 확인해보세요.
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./news/index.html" class="btn btn--white"
+                      >뉴스 확인 하기</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-corona swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>로또 보감도 함께하겠습니다.</h3>
-                <h2>#코로나19 극복!</h2>
-                <p>
-                  모두 함께하면 이겨낼 수 있어요. <br class="mobBr"> <br />
-                  함께 지켜주세요! 코로나19 예방수칙
-                </p>
-                <div class="visualBtn">
-                  <a href="./event/corona.html" class="btn btn--white">예방 수칙 안내</a>
+            <div class="visual visual-corona swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>로또 보감도 함께하겠습니다.</h3>
+                  <h2>#코로나19 극복!</h2>
+                  <p>
+                    모두 함께하면 이겨낼 수 있어요. <br class="mobBr" />
+                    <br />
+                    함께 지켜주세요! 코로나19 예방수칙
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./event/corona.html" class="btn btn--white"
+                      >예방 수칙 안내</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-voice swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>반드시 주의하세요! '그 놈 목소리'</h3>
-                <h2>진화하는 보이스피싱</h2>
-                <p>
-                  개인정보를 낚아 올린다는 뜻으로, 피싱 사기는<br />
-                  기망행위이며 <br class="mobBr"> 타인의 재산을 편취하는 특수 사기 범죄입니다.
-                </p>
-                <div class="visualBtn">
-                  <a href="./event/voice.html" class="btn btn--white">자세히 보기</a>
+            <div class="visual visual-voice swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>반드시 주의하세요! '그 놈 목소리'</h3>
+                  <h2>진화하는 보이스피싱</h2>
+                  <p>
+                    개인정보를 낚아 올린다는 뜻으로, 피싱 사기는<br />
+                    기망행위이며 <br class="mobBr" />
+                    타인의 재산을 편취하는 특수 사기 범죄입니다.
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./event/voice.html" class="btn btn--white"
+                      >자세히 보기</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-site swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>복권 구입은 동행복권에서!</h3>
-                <h2>동행복권 사칭 사이트 주의</h2>
-                <p>
-                  로또보감은 로또 번호를 조합 서비스 사이트입니다. <br class="mobBr"> <br />
-                  온라인 복권은 동행복권 공식 홈페이지에서만 구입 가능합니다.
-                </p>
-                <div class="visualBtn">
-                  <a href="http://www.dhlottery.co.kr" class="btn btn--white" target="_blank">동행복권 공식 홈페이지</a>
-                  <a href="http://m.dhlottery.co.kr" class="btn btn--white" target="_blank">동행복권 공식 모바일 웹</a>
+            <div class="visual visual-site swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>복권 구입은 동행복권에서!</h3>
+                  <h2>동행복권 사칭 사이트 주의</h2>
+                  <p>
+                    로또보감은 로또 번호를 조합 서비스 사이트입니다.
+                    <br class="mobBr" />
+                    <br />
+                    온라인 복권은 동행복권 공식 홈페이지에서만 구입 가능합니다.
+                  </p>
+                  <div class="visualBtn">
+                    <a
+                      href="http://www.dhlottery.co.kr"
+                      class="btn btn--white"
+                      target="_blank"
+                      >동행복권 공식 홈페이지</a
+                    >
+                    <a
+                      href="http://m.dhlottery.co.kr"
+                      class="btn btn--white"
+                      target="_blank"
+                      >동행복권 공식 모바일 웹</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="visual visual-event swiper-slide">
-            <div class="inner">
-              <div class="txtArea clearfix">
-                <h3>로또보감에서 경품 이벤트를 진행합니다.</h3>
-                <h2>아는만큼 건전해지는 퀴즈</h2>
-                <p>
-                  이름, 핸드폰 번호를 입력하신 후 복권 상식<br />
-                  O/X문제를 풀고 <br class="mobBr"> 응모하시면 추첨을 통해 경품을 드립니다!
-                </p>
-                <div class="visualBtn">
-                  <a href="./event/quiz.html" class="btn btn--white">이벤트 참여</a>
+            <div class="visual visual-event swiper-slide">
+              <div class="inner">
+                <div class="txtArea clearfix">
+                  <h3>로또보감에서 경품 이벤트를 진행합니다.</h3>
+                  <h2>아는만큼 건전해지는 퀴즈</h2>
+                  <p>
+                    이름, 핸드폰 번호를 입력하신 후 복권 상식<br />
+                    O/X문제를 풀고 <br class="mobBr" />
+                    응모하시면 추첨을 통해 경품을 드립니다!
+                  </p>
+                  <div class="visualBtn">
+                    <a href="./event/quiz.html" class="btn btn--white"
+                      >이벤트 참여</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="swiper-container gallery-thumbs">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide prev-trust">
-            <p>100% 당첨은 <br> 거짓입니다</p>
-          </div>
-          <div class="swiper-slide prev-mem">
-            <p>로또보감 <br> 상품안내</p>
-          </div>
-          <div class="swiper-slide prev-news">
-            <p>로또뉴스</p>
-          </div>
-          <div class="swiper-slide prev-corona">
-            <p>#코로나19 <br> 극복</p>
-          </div>
-          <div class="swiper-slide prev-voice">
-            <p>진화하는 <br> 보이스피싱</p>
-          </div>
-          <div class="swiper-slide prev-site">
-            <p>복권 사칭 <br> 사이트 주의</p>
-          </div>
-          <div class="swiper-slide prev-event">
-            <p>퀴즈 <br> 경품이벤트</p>
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide prev-trust">
+              <p>
+                100% 당첨은 <br />
+                거짓입니다
+              </p>
+            </div>
+            <div class="swiper-slide prev-mem">
+              <p>
+                로또보감 <br />
+                상품안내
+              </p>
+            </div>
+            <div class="swiper-slide prev-news">
+              <p>로또뉴스</p>
+            </div>
+            <div class="swiper-slide prev-corona">
+              <p>
+                #코로나19 <br />
+                극복
+              </p>
+            </div>
+            <div class="swiper-slide prev-voice">
+              <p>
+                진화하는 <br />
+                보이스피싱
+              </p>
+            </div>
+            <div class="swiper-slide prev-site">
+              <p>
+                복권 사칭 <br />
+                사이트 주의
+              </p>
+            </div>
+            <div class="swiper-slide prev-event">
+              <p>
+                퀴즈 <br />
+                경품이벤트
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mainSlider">
-        <div class="swiper-button-prev"></div>
-        <button class="pauseBtn">
-          <span class="material-icons">pause</span>
-        </button>
-        <button class="playBtn">
-          <span class="material-icons">play_arrow</span>
-        </button>
-        <div class="swiper-button-next"></div>
-      </div>
-    </section>
-    <!-- //mainVisual -->
+        <div class="mainSlider">
+          <div class="swiper-button-prev"></div>
+          <button class="pauseBtn">
+            <span class="material-icons">pause</span>
+          </button>
+          <button class="playBtn">
+            <span class="material-icons">play_arrow</span>
+          </button>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- //mainVisual -->
 
-    <section id="contentLotto">
-      <div class="inner clearfix">
-        <article class="performance clearfix">
-          <div class="kindTime clearfix">
+      <section id="contentLotto">
+        <div class="inner clearfix">
+          <article class="performance clearfix">
+            <div class="kindTime clearfix">
+              <div class="titArea clearfix">
+                <h4>회차별 당첨실적</h4>
+                <select>
+                  <option>953회차</option>
+                </select>
+              </div>
+              <table>
+                <colgroup>
+                  <col style="width: 17%" />
+                  <col style="width: 35%" />
+                  <col style="width: 48%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th class="lt">순위</th>
+                    <th class="ct">당첨 수</th>
+                    <th class="rt">당첨금</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="lt grade grade01">1등</td>
+                    <td class="ct">1조합</td>
+                    <td class="rt">3,403,348,929원</td>
+                  </tr>
+                  <tr>
+                    <td class="lt grade grade02">2등</td>
+                    <td class="ct">5조합</td>
+                    <td class="rt">431,584,105</td>
+                  </tr>
+                  <tr>
+                    <td class="lt grade grade03">3등</td>
+                    <td class="ct">157조합</td>
+                    <td class="rt">260,937,768</td>
+                  </tr>
+                  <tr>
+                    <td class="lt grade grade04">4등</td>
+                    <td class="ct">582조합</td>
+                    <td class="rt">29,100,000원</td>
+                  </tr>
+                  <tr>
+                    <td class="lt grade">5등</td>
+                    <td class="ct">177,397조합</td>
+                    <td class="rt">886,985,000원</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="total">
+              <div class="titArea clearfix">
+                <h4>로또보감 총 당첨실적</h4>
+              </div>
+              <div class="listTable">
+                <div class="thead">
+                  <ul class="clearfix">
+                    <li class="w20 lt">회차</li>
+                    <li class="w30 ct">번호</li>
+                    <li class="w20 ct">등수</li>
+                    <li class="w30 rt">당첨금</li>
+                  </ul>
+                </div>
+                <div class="tbody" id="vticker">
+                  <ul class="clearfix">
+                    <li>
+                      <div class="w20 lt">939회</div>
+                      <div class="w30 ct">01012345678</div>
+                      <div class="w20 ct">
+                        <span class="winGrade winGrade01">1등</span>
+                      </div>
+                      <div class="w30 rt">3,403,348,929원</div>
+                    </li>
+                    <li>
+                      <div class="w20 lt">939회</div>
+                      <div class="w30 ct">01012345678</div>
+                      <div class="w20 ct">
+                        <span class="winGrade winGrade02">2등</span>
+                      </div>
+                      <div class="w30 rt">86,316,821원</div>
+                    </li>
+                    <li>
+                      <div class="w20 lt">939회</div>
+                      <div class="w30 ct">01012345678</div>
+                      <div class="w20 ct">
+                        <span class="winGrade winGrade03">3등</span>
+                      </div>
+                      <div class="w30 rt">1,662,024원</div>
+                    </li>
+                    <li>
+                      <div class="w20 lt">939회</div>
+                      <div class="w30 ct">01012345678</div>
+                      <div class="w20 ct">
+                        <span class="winGrade winGrade04">4등</span>
+                      </div>
+                      <div class="w30 rt">50,000원</div>
+                    </li>
+                    <li>
+                      <div class="w20 lt">939회</div>
+                      <div class="w30 ct">01012345678</div>
+                      <div class="w20 ct">
+                        <span class="winGrade winGrade05">5등</span>
+                      </div>
+                      <div class="w30 rt">5,000원</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+          <script src="./_js/jquery.vticker.min.js"></script>
+          <script>
+            $("#vticker").vTicker("init", {
+              speed: 2000,
+              pause: 1000,
+              showItems: 4,
+              height: 168,
+              margin: 0,
+              padding: 10,
+            });
+          </script>
+          <article class="number num_box clearfix">
             <div class="titArea clearfix">
-              <h4>회차별 당첨실적</h4>
-              <select>
-                <option>953회차</option>
-              </select>
+              <h4><span>939회</span> 동행복권 당첨번호</h4>
+              <p>[2021. 03. 13]</p>
+            </div>
+            <div class="ballArea clearfix">
+              <div class="ball_box clearfix">
+                <span class="ball num2"></span>
+                <span class="ball num13"></span>
+                <span class="ball num25"></span>
+                <span class="ball num28"></span>
+                <span class="ball num29"></span>
+                <span class="ball num36"></span>
+                <span class="ball bonus">+</span>
+                <span class="ball num34"></span>
+              </div>
             </div>
             <table>
               <colgroup>
-                <col style="width: 17%;">
-                <col style="width: 35%;">
-                <col style="width: 48%;">
+                <col style="width: 20%" />
+                <col style="width: 30%" />
+                <col style="width: 50%" />
               </colgroup>
               <thead>
                 <tr>
@@ -315,620 +574,537 @@
               </thead>
               <tbody>
                 <tr>
-                  <td class="lt grade grade01">1등</td>
-                  <td class="ct">1조합</td>
-                  <td class="rt">3,403,348,929원</td>
+                  <td class="lt grade">1등</td>
+                  <td class="ct">7명</td>
+                  <td class="rt">23,823,442,503원</td>
                 </tr>
                 <tr>
-                  <td class="lt grade grade02">2등</td>
-                  <td class="ct">5조합</td>
-                  <td class="rt">431,584,105</td>
+                  <td class="lt grade">2등</td>
+                  <td class="ct">46명</td>
+                  <td class="rt">3,970,573,766원</td>
                 </tr>
                 <tr>
-                  <td class="lt grade grade03">3등</td>
-                  <td class="ct">157조합</td>
-                  <td class="rt">260,937,768</td>
+                  <td class="lt grade">3등</td>
+                  <td class="ct">2,389명</td>
+                  <td class="rt">3,970,575,336원</td>
                 </tr>
                 <tr>
-                  <td class="lt grade grade04">4등</td>
-                  <td class="ct">582조합</td>
-                  <td class="rt">29,100,000원</td>
+                  <td class="lt grade">4등</td>
+                  <td class="ct">122,129명</td>
+                  <td class="rt">6,106,450,000원</td>
                 </tr>
                 <tr>
                   <td class="lt grade">5등</td>
-                  <td class="ct">177,397조합</td>
-                  <td class="rt">886,985,000원</td>
+                  <td class="ct">2,043,257명</td>
+                  <td class="rt">10,216,285,000원</td>
                 </tr>
               </tbody>
             </table>
-          </div>
-          <div class="total">
-            <div class="titArea clearfix">
-              <h4>로또보감 총 당첨실적</h4>
-            </div>
-            <div class="listTable">
-              <div class="thead">
-                <ul class="clearfix">
-                  <li class="w20 lt">회차</li>
-                  <li class="w30 ct">번호</li>
-                  <li class="w20 ct">등수</li>
-                  <li class="w30 rt">당첨금</li>
-                </ul>
-              </div>
-              <div class="tbody" id="vticker">
-                <ul class="clearfix">
-                  <li>
-                    <div class="w20 lt">939회</div>
-                    <div class="w30 ct">01012345678</div>
-                    <div class="w20 ct"><span class="winGrade winGrade01">1등</span>
-                    </div>
-                    <div class="w30 rt">3,403,348,929원</div>
-                  </li>
-                  <li>
-                    <div class="w20 lt">939회</div>
-                    <div class="w30 ct">01012345678</div>
-                    <div class="w20 ct"><span class="winGrade winGrade02">2등</span>
-                    </div>
-                    <div class="w30 rt">86,316,821원</div>
-                  </li>
-                  <li>
-                    <div class="w20 lt">939회</div>
-                    <div class="w30 ct">01012345678</div>
-                    <div class="w20 ct"><span class="winGrade winGrade03">3등</span>
-                    </div>
-                    <div class="w30 rt">1,662,024원</div>
-                  </li>
-                  <li>
-                    <div class="w20 lt">939회</div>
-                    <div class="w30 ct">01012345678</div>
-                    <div class="w20 ct"><span class="winGrade winGrade04">4등</span>
-                    </div>
-                    <div class="w30 rt">50,000원</div>
-                  </li>
-                  <li>
-                    <div class="w20 lt">939회</div>
-                    <div class="w30 ct">01012345678</div>
-                    <div class="w20 ct"><span class="winGrade winGrade05">5등</span>
-                    </div>
-                    <div class="w30 rt">5,000원</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </article>
-        <script src="./_js/jquery.vticker.min.js"></script>
-        <script>
-          $('#vticker').vTicker('init', {
-            speed: 2000,
-            pause: 1000,
-            showItems: 4,
-            height: 168,
-            margin: 0,
-            padding: 10,
-          });
-        </script>
-        <article class="number num_box clearfix">
-          <div class="titArea clearfix">
-            <h4><span>939회</span> 동행복권 당첨번호</h4>
-            <p>[2021. 03. 13]</p>
-          </div>
-          <div class="ballArea clearfix">
-            <div class="ball_box clearfix">
-              <span class="ball num2"></span>
-              <span class="ball num13"></span>
-              <span class="ball num25"></span>
-              <span class="ball num28"></span>
-              <span class="ball num29"></span>
-              <span class="ball num36"></span>
-              <span class="ball bonus">+</span>
-              <span class="ball num34"></span>
-            </div>
-          </div>
-          <table>
-            <colgroup>
-              <col style="width: 20%;">
-              <col style="width: 30%;">
-              <col style="width: 50%;">
-            </colgroup>
-            <thead>
-              <tr>
-                <th class="lt">순위</th>
-                <th class="ct">당첨 수</th>
-                <th class="rt">당첨금</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="lt grade">1등</td>
-                <td class="ct">7명</td>
-                <td class="rt">23,823,442,503원</td>
-              </tr>
-              <tr>
-                <td class="lt grade">2등</td>
-                <td class="ct">46명</td>
-                <td class="rt">3,970,573,766원</td>
-              </tr>
-              <tr>
-                <td class="lt grade">3등</td>
-                <td class="ct">2,389명</td>
-                <td class="rt">3,970,575,336원</td>
-              </tr>
-              <tr>
-                <td class="lt grade">4등</td>
-                <td class="ct">122,129명</td>
-                <td class="rt">6,106,450,000원</td>
-              </tr>
-              <tr>
-                <td class="lt grade">5등</td>
-                <td class="ct">2,043,257명</td>
-                <td class="rt">10,216,285,000원</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-        <article class="drawVideo">
-          <div class="titArea">
-            <h4>로또추첨영상</h4>
-          </div>
-          <figure>
-            <a href="http://program.imbc.com/lotto" target="_blank">
-              <img src="./_img/main_video.jpg" alt="로또영상">
-              <span class="material-icons">play_arrow</span>
-            </a>
-          </figure>
-        </article>
-      </div>
-    </section>
-    <!-- //contentLotto -->
-
-    <section id="contentReceipt">
-      <div class="inner">
-        <div class="titArea">
-          <h4>로또보감 당첨영수증</h4>
-        </div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <img src="./_img/main_receipt.jpg" alt="당첨영수증">
-                <div class="infoWrap">
-                  <div class="tit">939회 당첨 축하드립니다.</div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <img src="./_img/main_receipt.jpg" alt="당첨영수증">
-                <div class="infoWrap">
-                  <div class="tit">939회 당첨 축하드립니다.</div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <img src="./_img/main_receipt.jpg" alt="당첨영수증">
-                <div class="infoWrap">
-                  <div class="tit">939회 당첨 축하드립니다.</div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="javascript:void(0)">
-                <img src="./_img/main_receipt.jpg" alt="당첨영수증">
-                <div class="infoWrap">
-                  <div class="tit">939회 당첨 축하드립니다.</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- //contentReceipt -->
-
-    <section id="contentBulletin">
-      <div class="inner clearfix">
-        <article class="news">
-          <div class="titArea clearfix">
-            <h4>로또뉴스</h4>
-          </div>
-          <div class="newsArea">
-            <div class="newsTop clearfix">
-              <figure>
-                <img src="./_img/main_news.jpg" alt="뉴스">
-              </figure>
-              <a href="javascript:void(0)">
-                <h5>로또875회 당첨번호 지역별 로또 최고명당은 어디?</h5>
-                <p class="newsDetail">[포쓰저널] 7일 추첨한 로또 875회 당첨번호 조회 결과 4주 연속 1등이 두자릿수를 기록하면서 전국 각 지역에서 대박 행운의 기쁨을 맞았다.</p>
-              </a>
-            </div>
-            <ul>
-              <li>
-                <a href="javascript:void(0)">'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호 조회는</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호 조회는</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호 조회는</a>
-              </li>
-              <li>
-                <a href="javascript:void(0)">'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호 조회는</a>
-              </li>
-            </ul>
-          </div>
-        </article>
-        <article class="newPrize">
-          <div class="titArea clearfix">
-            <h4>NEW 당첨게시판</h4>
-            <a href="./win/memberFree.html" class="btnSmall">더보기</a>
-          </div>
-          <ul>
-            <li>
-              <a href="./win/memberFree.html" class="clearfix">
-                <div class="txtArea">
-                  <h5>무료번호 2등 당첨됐어요</h5>
-                  <p>
-                    무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!! 처음이여서 괜시리.. 떨리네요 ㅋㅋ
-                    갑작스럽게 찜찜한 기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로 구매했습니다 ㅋㅋ
-                    은행가서 수령해보는건.. 로또 사면서 처음이네요!!
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./win/memberFree.html" class="clearfix">
-                <div class="txtArea">
-                  <h5>무료번호 2등 당첨됐어요</h5>
-                  <p>
-                    무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!! 처음이여서 괜시리.. 떨리네요 ㅋㅋ
-                    갑작스럽게 찜찜한 기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로 구매했습니다 ㅋㅋ
-                    은행가서 수령해보는건.. 로또 사면서 처음이네요!!
-                  </p>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a href="./win/memberFree.html" class="clearfix">
-                <div class="txtArea">
-                  <h5>무료번호 2등 당첨됐어요</h5>
-                  <p>
-                    무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!! 처음이여서 괜시리.. 떨리네요 ㅋㅋ
-                    갑작스럽게 찜찜한 기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로 구매했습니다 ㅋㅋ
-                    은행가서 수령해보는건.. 로또 사면서 처음이네요!!
-                  </p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article class="notice">
-          <div class="titArea clearfix">
-            <h4>공지사항</h4>
-            <a href="./cs/notice.html" class="btnSmall">더보기</a>
-          </div>
-          <ul>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>로또정보제공업체 현금영수증 의무화</p>
-                <span>2020-01-01</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>보이스피싱 주의보</p>
-                <span>2020-12-01</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>로또보감과 함께 코로나 19 이겨내자</p>
-                <span>2020-10-29</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>로또보감 경품 이벤트</p>
-                <span>2020-10-28</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>상품 할인 (필독)</p>
-                <span>2020-10-25</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/notice.html" class="clearfix">
-                <p>무통장 입금안내</p>
-                <span>2020-10-01</span>
-              </a>
-            </li>
-          </ul>
-        </article>
-        <article class="faq">
-          <div class="titArea clearfix">
-            <h4>자주하는질문</h4>
-            <a href="./cs/faq.html" class="btnSmall">더보기</a>
-          </div>
-          <ul>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[멤버십] 문자로 번호를 받았는데 없어졌다면?</p>
-                <span>2021-05-20</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[기타질문] 당첨금 수령은 어디서 가능한가요?</p>
-                <span>2021-04-01</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[기타질문] 외국인이 복권에 당첨될 경우?</p>
-                <span>2021-03-19</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[기타질문] 로또 용지가 훼손되었습니다. 수령이 가능한가요?</p>
-                <span>2021-01-01</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[멤버십] 문자 수신 요일 변경이 가능할까요?</p>
-                <span>2020-12-22</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[기타질문] 당첨 예상 번호는 어떤 요일에 받을 수 있나요?</p>
-                <span>2021-12-20</span>
-              </a>
-            </li>
-            <li>
-              <a href="./cs/faq,html" class="clearfix">
-                <p>[기타질문] 회원가입 시 개인정보수집을 하나요?</p>
-                <span>2021-12-01</span>
-              </a>
-            </li>
-          </ul>
-        </article>
-      </div>
-    </section>
-    <!-- //contentBulletin -->
-
-    <section id="contentMembership">
-      <div class="inner clearfix">
-        <div class="titArea">
-          <h4>보감안내</h4>
-        </div>
-        <ul class="memDetail clearfix">
-          <li class="mem__basic">
-            <figure>
-              <img src="./_img/mem_basic.png" alt="기본보감">
-            </figure>
-            <p>
-              매주 수요일 오후 5시에 기본 데이터 조합을 <br>
-              30조합씩 무료로 제공해드리고있습니다. <br>
-              문자 서비스 제공이 붕가능합니다.
-            </p>
-            <div class="memBtn clearfix">
-              <a href="./auth/join.html" class="btn--mem btn--mem--reverse">회원가입</a>
-              <a href="./premium/index.html" class="btn--mem">자세히보기</a>
-            </div>
-          </li>
-          <li class="mem__middle">
-            <figure>
-              <img src="./_img/mem_middle.png" alt="중급보감">
-            </figure>
-            <p>
-              복권이 나온 1회차부터 현재까지의 <br>
-              누적 데이터를 통계내어, 인공지능기술과 <br>
-              필터링 작업으로 완성된 분석 시스템입니다.
-            </p>
-            <div class="memBtn clearfix">
-              <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse">상품가입</a>
-              <a href="./premium/index.html" class="btn--mem">자세히보기</a>
-            </div>
-          </li>
-          <li class="mem__higher">
-            <figure>
-              <img src="./_img/mem_higher.png" alt="상급보감">
-            </figure>
-            <p>
-              동행복권 데이터를 압축한 데이터를 <br>
-              고정수와 제외수를 산출하여 <br>
-              더욱 더 세밀하고 공격적인 서비스를 제공합니다.
-            </p>
-            <div class="memBtn clearfix">
-              <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse">상품가입</a>
-              <a href="./premium/index.html" class="btn--mem">자세히보기</a>
-            </div>
-          </li>
-          <li class="mem__master">
-            <figure>
-              <img src="./_img/mem_master.png" alt="고수보감">
-            </figure>
-            <p>
-              814만개의 번호를 압축하여 1회차 부터 <br>
-              현재 회차까지의 패턴을 다음 회차에 맞는 <br>
-              패턴으로 보다 확실한 당첨을 제공해드립니다. <br>
-            </p>
-            <div class="memBtn clearfix">
-              <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse">상품가입</a>
-              <a href="./premium/index.html" class="btn--mem">자세히보기</a>
-            </div>
-          </li>
-          <li class="mem__masterp">
-            <figure>
-              <img src="./_img/mem_masterpack.png" alt="진리보감">
-            </figure>
-            <p>
-              그토록 꿈에서도 잘 찾아오지 않는 <br>
-              로또 1등당첨 로또보감에서 느껴보세요. <br>
-              1:1 집중 맞춤형 서비스로 당첨을 제공해드립니다.
-            </p>
-            <div class="memBtn clearfix">
-              <a href="./cs/consult.html" class="btn--mem btn--mem--reverse">예약상담</a>
-              <a href="./premium/index.html" class="btn--mem">자세히보기</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- //contentMembership -->
-
-    <section id="contentCsPop">
-      <div class="inner clearfix">
-        <article class="csArea clearfix">
-          <div class="bank">
+          </article>
+          <article class="drawVideo">
             <div class="titArea">
-              <h4>무통장입금</h4>
+              <h4>로또추첨영상</h4>
             </div>
-            <h5>
-              <img src="./_img/logo_bank_sh.png" alt="신한은행">
-            </h5>
-            <table>
-              <tr>
-                <th>은행명</th>
-                <td>신한은행</td>
-              </tr>
-              <tr>
-                <th>계좌번호</th>
-                <td>123-456-123456</td>
-              </tr>
-              <tr>
-                <th>예금주</th>
-                <td>로또보감</td>
-              </tr>
-            </table>
-          </div>
-          <div class="center clearfix">
-            <div class="titArea">
-              <h4>고객센터</h4>
-            </div>
-            <h5>1234-5678</h5>
-            <table>
-              <tr>
-                <th>상담시간</th>
-                <td>10 : 00 ~ 18 : 00</td>
-              </tr>
-              <tr>
-                <th>정심시간</th>
-                <td>12 : 00 ~ 13 : 00</td>
-              </tr>
-              <tr>
-                <th>휴무일</th>
-                <td>토/일 및 법정공휴일</td>
-              </tr>
-            </table>
-            <a href="./cs/consult.html" class="btn btn--coun">상담예약</a>
-          </div>
-        </article>
-        <article class="popupZone">
+            <figure>
+              <a href="http://program.imbc.com/lotto" target="_blank">
+                <img src="./_img/main_video.jpg" alt="로또영상" />
+                <span class="material-icons">play_arrow</span>
+              </a>
+            </figure>
+          </article>
+        </div>
+      </section>
+      <!-- //contentLotto -->
+
+      <section id="contentReceipt">
+        <div class="inner">
           <div class="titArea">
-            <h4>팝업존</h4>
+            <h4>로또보감 당첨영수증</h4>
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <a href="javascript:void(0)" target="_blank">
-                  <img src="./_img/main_video.jpg" alt="팝업">
+                <a href="javascript:void(0)">
+                  <img src="./_img/main_receipt.jpg" alt="당첨영수증" />
+                  <div class="infoWrap">
+                    <div class="tit">939회 당첨 축하드립니다.</div>
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)" target="_blank">
-                  <img src="./_img/main_video.jpg" alt="팝업">
+                <a href="javascript:void(0)">
+                  <img src="./_img/main_receipt.jpg" alt="당첨영수증" />
+                  <div class="infoWrap">
+                    <div class="tit">939회 당첨 축하드립니다.</div>
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)" target="_blank">
-                  <img src="./_img/main_video.jpg" alt="팝업">
+                <a href="javascript:void(0)">
+                  <img src="./_img/main_receipt.jpg" alt="당첨영수증" />
+                  <div class="infoWrap">
+                    <div class="tit">939회 당첨 축하드립니다.</div>
+                  </div>
                 </a>
               </div>
               <div class="swiper-slide">
-                <a href="javascript:void(0)" target="_blank">
-                  <img src="./_img/main_video.jpg" alt="팝업">
+                <a href="javascript:void(0)">
+                  <img src="./_img/main_receipt.jpg" alt="당첨영수증" />
+                  <div class="infoWrap">
+                    <div class="tit">939회 당첨 축하드립니다.</div>
+                  </div>
                 </a>
               </div>
             </div>
           </div>
-        </article>
-      </div>
-    </section>
-    <!-- //contentCsPop -->
+        </div>
+      </section>
+      <!-- //contentReceipt -->
 
-    <footer>
-      <div class="footMenu">
-        <div class="inner">
-          <ul class="clearfix">
-            <li><a href="./system/introduction.html">시스템 소개</a></li>
-            <li><a href="./cs/notice.html">고객센터</a></li>
-            <li class="useBtn"><a href="javascript:void(0)">이용약관</a></li>
-            <li class="personalBtn"><a href="javascript:void(0)">개인정보처리방침</a></li>
+      <section id="contentBulletin">
+        <div class="inner clearfix">
+          <article class="news">
+            <div class="titArea clearfix">
+              <h4>로또뉴스</h4>
+            </div>
+            <div class="newsArea">
+              <div class="newsTop clearfix">
+                <figure>
+                  <img src="./_img/main_news.jpg" alt="뉴스" />
+                </figure>
+                <a href="javascript:void(0)">
+                  <h5>로또875회 당첨번호 지역별 로또 최고명당은 어디?</h5>
+                  <p class="newsDetail">
+                    [포쓰저널] 7일 추첨한 로또 875회 당첨번호 조회 결과 4주 연속
+                    1등이 두자릿수를 기록하면서 전국 각 지역에서 대박 행운의
+                    기쁨을 맞았다.
+                  </p>
+                </a>
+              </div>
+              <ul>
+                <li>
+                  <a href="javascript:void(0)"
+                    >'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호
+                    조회는</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    >'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호
+                    조회는</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    >'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호
+                    조회는</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:void(0)"
+                    >'집 활활 타는 꿈' 불난집에 대박? …877회차 로또 당첨번호
+                    조회는</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="newPrize">
+            <div class="titArea clearfix">
+              <h4>NEW 당첨게시판</h4>
+              <a href="./win/memberFree.html" class="btnSmall">더보기</a>
+            </div>
+            <ul>
+              <li>
+                <a href="./win/memberFree.html" class="clearfix">
+                  <div class="txtArea">
+                    <h5>무료번호 2등 당첨됐어요</h5>
+                    <p>
+                      무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!!
+                      처음이여서 괜시리.. 떨리네요 ㅋㅋ 갑작스럽게 찜찜한
+                      기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로
+                      구매했습니다 ㅋㅋ 은행가서 수령해보는건.. 로또 사면서
+                      처음이네요!!
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./win/memberFree.html" class="clearfix">
+                  <div class="txtArea">
+                    <h5>무료번호 2등 당첨됐어요</h5>
+                    <p>
+                      무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!!
+                      처음이여서 괜시리.. 떨리네요 ㅋㅋ 갑작스럽게 찜찜한
+                      기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로
+                      구매했습니다 ㅋㅋ 은행가서 수령해보는건.. 로또 사면서
+                      처음이네요!!
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="./win/memberFree.html" class="clearfix">
+                  <div class="txtArea">
+                    <h5>무료번호 2등 당첨됐어요</h5>
+                    <p>
+                      무료번호 2등당첨 감사합니다~ 오늘 수령하러 가요!!
+                      처음이여서 괜시리.. 떨리네요 ㅋㅋ 갑작스럽게 찜찜한
+                      기분이들어서 싸이트확인해서 기본보감? 그거 보고 바로
+                      구매했습니다 ㅋㅋ 은행가서 수령해보는건.. 로또 사면서
+                      처음이네요!!
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article class="notice">
+            <div class="titArea clearfix">
+              <h4>공지사항</h4>
+              <a href="./cs/notice.html" class="btnSmall">더보기</a>
+            </div>
+            <ul>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>로또정보제공업체 현금영수증 의무화</p>
+                  <span>2020-01-01</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>보이스피싱 주의보</p>
+                  <span>2020-12-01</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>로또보감과 함께 코로나 19 이겨내자</p>
+                  <span>2020-10-29</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>로또보감 경품 이벤트</p>
+                  <span>2020-10-28</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>상품 할인 (필독)</p>
+                  <span>2020-10-25</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/notice.html" class="clearfix">
+                  <p>무통장 입금안내</p>
+                  <span>2020-10-01</span>
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article class="faq">
+            <div class="titArea clearfix">
+              <h4>자주하는질문</h4>
+              <a href="./cs/faq.html" class="btnSmall">더보기</a>
+            </div>
+            <ul>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[멤버십] 문자로 번호를 받았는데 없어졌다면?</p>
+                  <span>2021-05-20</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[기타질문] 당첨금 수령은 어디서 가능한가요?</p>
+                  <span>2021-04-01</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[기타질문] 외국인이 복권에 당첨될 경우?</p>
+                  <span>2021-03-19</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>
+                    [기타질문] 로또 용지가 훼손되었습니다. 수령이 가능한가요?
+                  </p>
+                  <span>2021-01-01</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[멤버십] 문자 수신 요일 변경이 가능할까요?</p>
+                  <span>2020-12-22</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[기타질문] 당첨 예상 번호는 어떤 요일에 받을 수 있나요?</p>
+                  <span>2021-12-20</span>
+                </a>
+              </li>
+              <li>
+                <a href="./cs/faq,html" class="clearfix">
+                  <p>[기타질문] 회원가입 시 개인정보수집을 하나요?</p>
+                  <span>2021-12-01</span>
+                </a>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+      <!-- //contentBulletin -->
+
+      <section id="contentMembership">
+        <div class="inner clearfix">
+          <div class="titArea">
+            <h4>보감안내</h4>
+          </div>
+          <ul class="memDetail clearfix">
+            <li class="mem__basic">
+              <figure>
+                <img src="./_img/mem_basic.png" alt="기본보감" />
+              </figure>
+              <p>
+                매주 수요일 오후 5시에 기본 데이터 조합을 <br />
+                30조합씩 무료로 제공해드리고있습니다. <br />
+                문자 서비스 제공이 붕가능합니다.
+              </p>
+              <div class="memBtn clearfix">
+                <a href="./auth/join.html" class="btn--mem btn--mem--reverse"
+                  >회원가입</a
+                >
+                <a href="./premium/index.html" class="btn--mem">자세히보기</a>
+              </div>
+            </li>
+            <li class="mem__middle">
+              <figure>
+                <img src="./_img/mem_middle.png" alt="중급보감" />
+              </figure>
+              <p>
+                복권이 나온 1회차부터 현재까지의 <br />
+                누적 데이터를 통계내어, 인공지능기술과 <br />
+                필터링 작업으로 완성된 분석 시스템입니다.
+              </p>
+              <div class="memBtn clearfix">
+                <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse"
+                  >상품가입</a
+                >
+                <a href="./premium/index.html" class="btn--mem">자세히보기</a>
+              </div>
+            </li>
+            <li class="mem__higher">
+              <figure>
+                <img src="./_img/mem_higher.png" alt="상급보감" />
+              </figure>
+              <p>
+                동행복권 데이터를 압축한 데이터를 <br />
+                고정수와 제외수를 산출하여 <br />
+                더욱 더 세밀하고 공격적인 서비스를 제공합니다.
+              </p>
+              <div class="memBtn clearfix">
+                <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse"
+                  >상품가입</a
+                >
+                <a href="./premium/index.html" class="btn--mem">자세히보기</a>
+              </div>
+            </li>
+            <li class="mem__master">
+              <figure>
+                <img src="./_img/mem_master.png" alt="고수보감" />
+              </figure>
+              <p>
+                814만개의 번호를 압축하여 1회차 부터 <br />
+                현재 회차까지의 패턴을 다음 회차에 맞는 <br />
+                패턴으로 보다 확실한 당첨을 제공해드립니다. <br />
+              </p>
+              <div class="memBtn clearfix">
+                <a href="./my/payInfo.html" class="btn--mem btn--mem--reverse"
+                  >상품가입</a
+                >
+                <a href="./premium/index.html" class="btn--mem">자세히보기</a>
+              </div>
+            </li>
+            <li class="mem__masterp">
+              <figure>
+                <img src="./_img/mem_masterpack.png" alt="진리보감" />
+              </figure>
+              <p>
+                그토록 꿈에서도 잘 찾아오지 않는 <br />
+                로또 1등당첨 로또보감에서 느껴보세요. <br />
+                1:1 집중 맞춤형 서비스로 당첨을 제공해드립니다.
+              </p>
+              <div class="memBtn clearfix">
+                <a href="./cs/consult.html" class="btn--mem btn--mem--reverse"
+                  >예약상담</a
+                >
+                <a href="./premium/index.html" class="btn--mem">자세히보기</a>
+              </div>
+            </li>
           </ul>
         </div>
-      </div>
-      <div class="footArea inner clearfix">
-        <figure class="footLogo">
-          <a href="./index.html">
-            <img src="./_img/logo_footer.png" alt="로또보감">
-          </a>
-        </figure>
-        <ul class="footCopy clearfix">
-          <li class="bankAccount">
-            <h4>BANK ACCOUNT</h4>
-            <ul>
-              <li><span>은행명</span>신한은행</li>
-              <li><span>계좌번호</span>123-456-123456</li>
-              <li><span>예금주</span>로또보감</li>
-            </ul>
-          </li>
-          <li class="customer">
-            <h4>CUSTOMER CENTER</h4>
-            <ul>
-              <li class="footTel">1234-5678</li>
-              <li><span>상담시간</span>10 : 00 ~ 18 : 00</li>
-              <li><span>점심시간</span>12 : 00 ~ 13 : 00</li>
-              <li><span>휴무일</span>토/일요일 및 법정공휴일</li>
-            </ul>
-          </li>
-          <li class="information">
-            <h4>COMPANY INFOMATION</h4>
-            <ul>
-              <li><span>상호</span>로또보감 <span class="lfPadd">대표자</span>김철수</li>
-              <li><span>주소</span>로또보감</li>
-              <li><span>사업자등록번호</span>000-00-00000</li>
-              <li><span>통신판매업신고번호</span>인천미추홀-0000</li>
-              <li><span>보증책임관리자</span>김철수</li>
-              <li><span>대표번호</span>000-000-0000 <span class="lfPadd">팩스</span>000-0000-0000</li>
-              <li><span>무료수신거부</span>0000-0000</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <!-- //footer -->
+      </section>
+      <!-- //contentMembership -->
 
-    <div id="to-top">
-      <div class="material-icons">arrow_upward</div>
-    </div>
-    <!-- //to-top -->
-
-    <div id="policyUse" class="layerPopup">
-      <div class="layerContent">
-        <div class="layerTitle clearfix">
-          <h4>이용약관</h4>
-          <a href="javascript:void(0)" class="useClose">
-            <span class="material-icons">close</span>
-          </a>
+      <section id="contentCsPop">
+        <div class="inner clearfix">
+          <article class="csArea clearfix">
+            <div class="bank">
+              <div class="titArea">
+                <h4>무통장입금</h4>
+              </div>
+              <h5>
+                <img src="./_img/logo_bank_sh.png" alt="신한은행" />
+              </h5>
+              <table>
+                <tr>
+                  <th>은행명</th>
+                  <td>신한은행</td>
+                </tr>
+                <tr>
+                  <th>계좌번호</th>
+                  <td>123-456-123456</td>
+                </tr>
+                <tr>
+                  <th>예금주</th>
+                  <td>로또보감</td>
+                </tr>
+              </table>
+            </div>
+            <div class="center clearfix">
+              <div class="titArea">
+                <h4>고객센터</h4>
+              </div>
+              <h5>1234-5678</h5>
+              <table>
+                <tr>
+                  <th>상담시간</th>
+                  <td>10 : 00 ~ 18 : 00</td>
+                </tr>
+                <tr>
+                  <th>정심시간</th>
+                  <td>12 : 00 ~ 13 : 00</td>
+                </tr>
+                <tr>
+                  <th>휴무일</th>
+                  <td>토/일 및 법정공휴일</td>
+                </tr>
+              </table>
+              <a href="./cs/consult.html" class="btn btn--coun">상담예약</a>
+            </div>
+          </article>
+          <article class="popupZone">
+            <div class="titArea">
+              <h4>팝업존</h4>
+            </div>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" target="_blank">
+                    <img src="./_img/main_video.jpg" alt="팝업" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" target="_blank">
+                    <img src="./_img/main_video.jpg" alt="팝업" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" target="_blank">
+                    <img src="./_img/main_video.jpg" alt="팝업" />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)" target="_blank">
+                    <img src="./_img/main_video.jpg" alt="팝업" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="layerText">
-          <pre>
+      </section>
+      <!-- //contentCsPop -->
+
+      <footer>
+        <div class="footMenu">
+          <div class="inner">
+            <ul class="clearfix">
+              <li><a href="./system/introduction.html">시스템 소개</a></li>
+              <li><a href="./cs/notice.html">고객센터</a></li>
+              <li class="useBtn"><a href="javascript:void(0)">이용약관</a></li>
+              <li class="personalBtn">
+                <a href="javascript:void(0)">개인정보처리방침</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footArea inner clearfix">
+          <figure class="footLogo">
+            <a href="./index.html">
+              <img src="./_img/logo_footer.png" alt="로또보감" />
+            </a>
+          </figure>
+          <ul class="footCopy clearfix">
+            <li class="bankAccount">
+              <h4>BANK ACCOUNT</h4>
+              <ul>
+                <li><span>은행명</span>신한은행</li>
+                <li><span>계좌번호</span>123-456-123456</li>
+                <li><span>예금주</span>로또보감</li>
+              </ul>
+            </li>
+            <li class="customer">
+              <h4>CUSTOMER CENTER</h4>
+              <ul>
+                <li class="footTel">1234-5678</li>
+                <li><span>상담시간</span>10 : 00 ~ 18 : 00</li>
+                <li><span>점심시간</span>12 : 00 ~ 13 : 00</li>
+                <li><span>휴무일</span>토/일요일 및 법정공휴일</li>
+              </ul>
+            </li>
+            <li class="information">
+              <h4>COMPANY INFOMATION</h4>
+              <ul>
+                <li>
+                  <span>상호</span>로또보감
+                  <span class="lfPadd">대표자</span>김철수
+                </li>
+                <li><span>주소</span>로또보감</li>
+                <li><span>사업자등록번호</span>000-00-00000</li>
+                <li><span>통신판매업신고번호</span>인천미추홀-0000</li>
+                <li><span>보증책임관리자</span>김철수</li>
+                <li>
+                  <span>대표번호</span>000-000-0000
+                  <span class="lfPadd">팩스</span>000-0000-0000
+                </li>
+                <li><span>무료수신거부</span>0000-0000</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </footer>
+      <!-- //footer -->
+
+      <div id="to-top">
+        <div class="material-icons">arrow_upward</div>
+      </div>
+      <!-- //to-top -->
+
+      <div id="policyUse" class="layerPopup">
+        <div class="layerContent">
+          <div class="layerTitle clearfix">
+            <h4>이용약관</h4>
+            <a href="javascript:void(0)" class="useClose">
+              <span class="material-icons">close</span>
+            </a>
+          </div>
+          <div class="layerText">
+            <pre>
               제 1 조 (총칙)
               로또보감(이하 “회사”) 의 이용약관은 다음과 같고, 회사는 라는 명칭의 웹 사이트를 운영하고 있습니다.
               회사는 종합 콘텐츠 포털 서비스를 제공하는 사이트로 복권 콘텐츠를 유 / 무료로 제공하고 있습니다.
@@ -1172,21 +1348,21 @@
               1. 이 약관은 2020년 9월 4일부터 적용됩니다.
               2. 종전의 약관은 본 약관으로 대체합니다.
             </pre>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- // policyUse -->
+      <!-- // policyUse -->
 
-    <div id="policyPersonal" class="layerPopup">
-      <div class="layerContent">
-        <div class="layerTitle clearfix">
-          <h4>개인정보처리방침</h4>
-          <a href="javascript:void(0)" class="perClose">
-            <span class="material-icons">close</span>
-          </a>
-        </div>
-        <div class="layerText">
-          <pre>
+      <div id="policyPersonal" class="layerPopup">
+        <div class="layerContent">
+          <div class="layerTitle clearfix">
+            <h4>개인정보처리방침</h4>
+            <a href="javascript:void(0)" class="perClose">
+              <span class="material-icons">close</span>
+            </a>
+          </div>
+          <div class="layerText">
+            <pre>
             로또보감(이하 “회사”)은 이용자의 개인정보를 중요시하며,「정보통신망 이용촉진 및 정보보호 등에 관한 법률,「개인정보보호법」상의 개인정보보호 법령, 고시 기준을 준수하고 있습니다.
             회사는 관련 법령에 의거한 개인정보 처리방침을 정하여 이용자에게 정보주체의 개인정보가 어떠한 용도와 방식으로 이용되며, 개인정보 보호를 위하여 어떠한 조치를 취하는지에 대해 알려드립니다. 또한 본 처리방침을 사이트에 공개하여 이용자가 언제나 쉽게 열람할 수 있도록 하고 있습니다.
             
@@ -1268,48 +1444,49 @@
   
             6. 개인정보 처리위탁
             회사는 서비스 향상을 위해서 아래와 같이 개인정보를 위탁하고 있으며, 관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.
-          </pre>
-          <table class="table_st3 table_st" style="width: 100%;">
-            <tr>
-              <th>구분</th>
-              <th>수탁업체</th>
-              <th>위탁 업무 내용</th>
-              <th>개인정보 보유 및 이용 기간</th>
-            </tr>
-            <tr>
-              <td>SMS 발송대행 업무</td>
-              <td>심플렉스인터넷㈜</td>
-              <td>유료 서비스 SMS 안내 발송대행 업무</td>
-              <td rowspan="7">회원 탈퇴 시 또는 위탁 계약 종료 시까지</td>
-            </tr>
-            <tr>
-              <td rowspan="3">온라인 결제 업무<br>(휴대폰)</td>
-              <td>㈜다날</td>
-              <td rowspan="3">온라인 결제<br>처리 및 결제 도용 방지</td>
-            </tr>
-            <tr>
-              <td>SK플래닛㈜</td>
-            </tr>
-            <tr>
-              <td>효성에프엠에스㈜</td>
-            </tr>
-            <tr>
-              <td>온라인 결제 업무<br>(카드, ARS, 계좌이체, 수기결제)</td>
-              <td>㈜한국사이버결제(KCP)</td>
-              <td>온라인 결제<br>처리 및 결제 도용 방지</td>
-            </tr>
-            <tr>
-              <td>IDC 운영</td>
-              <td>나우랩</td>
-              <td>비상시 시스템 접근 운영</td>
-            </tr>
-            <tr>
-              <td>유지보수 업무</td>
-              <td>나우랩</td>
-              <td>유지보수 업무</td>
-            </tr>
-          </table>
-          <pre>
+          </pre
+            >
+            <table class="table_st3 table_st" style="width: 100%">
+              <tr>
+                <th>구분</th>
+                <th>수탁업체</th>
+                <th>위탁 업무 내용</th>
+                <th>개인정보 보유 및 이용 기간</th>
+              </tr>
+              <tr>
+                <td>SMS 발송대행 업무</td>
+                <td>심플렉스인터넷㈜</td>
+                <td>유료 서비스 SMS 안내 발송대행 업무</td>
+                <td rowspan="7">회원 탈퇴 시 또는 위탁 계약 종료 시까지</td>
+              </tr>
+              <tr>
+                <td rowspan="3">온라인 결제 업무<br />(휴대폰)</td>
+                <td>㈜다날</td>
+                <td rowspan="3">온라인 결제<br />처리 및 결제 도용 방지</td>
+              </tr>
+              <tr>
+                <td>SK플래닛㈜</td>
+              </tr>
+              <tr>
+                <td>효성에프엠에스㈜</td>
+              </tr>
+              <tr>
+                <td>온라인 결제 업무<br />(카드, ARS, 계좌이체, 수기결제)</td>
+                <td>㈜한국사이버결제(KCP)</td>
+                <td>온라인 결제<br />처리 및 결제 도용 방지</td>
+              </tr>
+              <tr>
+                <td>IDC 운영</td>
+                <td>나우랩</td>
+                <td>비상시 시스템 접근 운영</td>
+              </tr>
+              <tr>
+                <td>유지보수 업무</td>
+                <td>나우랩</td>
+                <td>유지보수 업무</td>
+              </tr>
+            </table>
+            <pre>
             ※ 일부 서비스는 외부 콘텐츠 제공사(CP)에서 결제 및 환불 등에 대한 고객상담을 할 수 있습니다.
             
             7. 만 14세 미만 아동의 개인정보보호
@@ -1368,14 +1545,12 @@
             13. 개인정보 처리방침 변경
             본 개인정보 처리방침은 2020년 9월 4일부터 적용됩니다.
             개인정보 처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정안 적용일 7일 전부터 회사 사이트 내 공지사항을 통하여 고지할 것입니다.
-          </pre>
+          </pre
+            >
+          </div>
         </div>
       </div>
+      <!-- // policyPersonal -->
     </div>
-    <!-- // policyPersonal -->
-
-  </div>
-
-</body>
-
+  </body>
 </html>

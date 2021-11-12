@@ -115,16 +115,18 @@
 
 #mainVisual .mainSlider .swiper-button-prev::after,
 #mainVisual .mainSlider .swiper-button-next::after {
-  font-family: 'Linearicons-Free';
+  display: inline-block;
+  margin-top: 0.1em;
+  font-family: "Linearicons-Free";
   font-size: 3.4rem;
 }
 
 #mainVisual .mainSlider .swiper-button-prev::after {
-  content: '\e879';
+  content: "\e879";
 }
 
 #mainVisual .mainSlider .swiper-button-next::after {
-  content: '\e87a';
+  content: "\e87a";
 }
 
 #mainVisual .mainSlider .pauseBtn,
@@ -158,7 +160,7 @@
 }
 
 #mainVisual .gallery-top .visual:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -222,7 +224,7 @@
 }
 
 #mainVisual .gallery-thumbs .swiper-slide:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -323,7 +325,7 @@
   height: 100%;
 }
 
-#contentLotto .performance>div {
+#contentLotto .performance > div {
   float: left;
   width: 18.75em;
   height: 100%;
@@ -375,15 +377,15 @@
 }
 
 #contentLotto .performance table td.grade02 {
-  color: #F06D2D;
+  color: #f06d2d;
 }
 
 #contentLotto .performance table td.grade03 {
-  color: #0B7138;
+  color: #0b7138;
 }
 
 #contentLotto .performance table td.grade04 {
-  color: #5F88AD;
+  color: #5f88ad;
 }
 
 #contentLotto .performance .listTable .thead ul li {
@@ -426,15 +428,15 @@
 }
 
 .winGrade02 {
-  color: #F06D2D;
+  color: #f06d2d;
 }
 
 .winGrade03 {
-  color: #0B7138;
+  color: #0b7138;
 }
 
 .winGrade04 {
-  color: #5F88AD;
+  color: #5f88ad;
 }
 
 #contentLotto .number {
@@ -812,7 +814,7 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 5rem;
   font-weight: 600;
   color: #fff;
@@ -821,7 +823,7 @@
 }
 
 #contentReceipt .swiper-slide a::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -987,7 +989,7 @@
 }
 
 #contentBulletin .news .newsArea ul li a::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 0;
@@ -1122,7 +1124,7 @@
 }
 
 #contentMembership .memDetail li::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: -0.62em;
@@ -1167,68 +1169,68 @@
 }
 
 .mem__basic .btn--mem {
-  background-color: #5F88AD;
-  border: 2px solid #5F88AD;
+  background-color: #5f88ad;
+  border: 2px solid #5f88ad;
 }
 
 .mem__basic .btn--mem:hover,
 .mem__basic .btn--mem:focus {
   background-color: transparent;
-  color: #5F88AD;
+  color: #5f88ad;
 }
 
 .mem__basic .btn--mem--reverse {
   background-color: transparent;
-  color: #5F88AD;
+  color: #5f88ad;
 }
 
 .mem__basic .btn--mem--reverse:hover,
 .mem__basic .btn--mem--reverse:focus {
-  background-color: #5F88AD;
+  background-color: #5f88ad;
   color: #fff;
 }
 
 .mem__middle .btn--mem {
-  background-color: #0B7138;
-  border: 2px solid #0B7138;
+  background-color: #0b7138;
+  border: 2px solid #0b7138;
 }
 
 .mem__middle .btn--mem:hover,
 .mem__middle .btn--mem:focus {
   background-color: transparent;
-  color: #0B7138;
+  color: #0b7138;
 }
 
 .mem__middle .btn--mem--reverse {
   background-color: transparent;
-  color: #0B7138;
+  color: #0b7138;
 }
 
 .mem__middle .btn--mem--reverse:hover,
 .mem__middle .btn--mem--reverse:focus {
-  background-color: #0B7138;
+  background-color: #0b7138;
   color: #fff;
 }
 
 .mem__higher .btn--mem {
-  background-color: #F06D2D;
-  border: 2px solid #F06D2D;
+  background-color: #f06d2d;
+  border: 2px solid #f06d2d;
 }
 
 .mem__higher .btn--mem:hover,
 .mem__higher .btn--mem:focus {
   background-color: transparent;
-  color: #F06D2D;
+  color: #f06d2d;
 }
 
 .mem__higher .btn--mem--reverse {
   background-color: transparent;
-  color: #F06D2D;
+  color: #f06d2d;
 }
 
 .mem__higher .btn--mem--reverse:hover,
 .mem__higher .btn--mem--reverse:focus {
-  background-color: #F06D2D;
+  background-color: #f06d2d;
   color: #fff;
 }
 
@@ -1295,7 +1297,7 @@
   width: 50%;
 }
 
-#contentCsPop .csArea>div {
+#contentCsPop .csArea > div {
   float: left;
   width: calc(50% - 0.62em);
   margin-right: 0.62em;
