@@ -1,0 +1,2577 @@
+@media screen and (min-width: 1025px) and (max-width: 1599px) {
+
+  /* subVisTitle */
+  .subVisTitle.svt_system,
+  .subVisTitle.svt_premium,
+  .subVisTitle.svt_analysis,
+  .subVisTitle.svt_win,
+  .subVisTitle.svt_news,
+  .subVisTitle.svt_my,
+  .subVisTitle.svt_cs,
+  .subVisTitle.svt_corona,
+  .subVisTitle.svt_voice,
+  .subVisTitle.svt_quiz {
+    background-size: cover;
+  }
+
+  .subVisTitle h2 {
+    top: 55%;
+  }
+
+  /* subContentWrap */
+  .subContentWrap {
+    padding-top: 1em;
+  }
+
+  /* system */
+  .systemGrade ul li {
+    width: 10em;
+    height: 10em;
+  }
+
+  .systemGrade .txtBox {
+    width: 10em;
+    height: 10em;
+  }
+
+  .systemLeft {
+    width: 100%;
+  }
+
+  .systemRight {
+    width: 100%;
+  }
+
+  .systemRight strong {
+    word-break: keep-all;
+  }
+
+  .systemRight strong br {
+    display: none;
+  }
+
+  .system02 .systemRight ul li figure {
+    height: 10em;
+  }
+
+  .systemTheory ul li p {
+    word-break: keep-all;
+  }
+
+  .system06 ul li figure {
+    width: 32%;
+  }
+
+  .system06 .txtArea {
+    width: calc(68% - 1.25em);
+  }
+
+  .system06 .txtArea p br {
+    display: none;
+  }
+
+  /* premium */
+  .classBox .caninfo .titBox p.infotxt {
+    font-size: 1.5rem;
+  }
+
+  /* analysis */
+  .sticsSpread_tbl table {
+    table-layout: auto;
+  }
+
+  .sticsSpread_tbl table tbody th {
+    width: 4%;
+  }
+
+  .sticsSpread_tbl table tbody td {
+    width: calc(96% / 45);
+  }
+
+  /* board */
+  .interview_board .item_lst {
+    width: calc((100% - 2.48em) / 5);
+  }
+
+  .interview_board .item_lst:nth-child(-n + 6) {
+    margin-top: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(-n + 5) {
+    margin-top: 0;
+  }
+
+  .interview_board .item_lst:nth-child(6n) {
+    margin-right: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(5n) {
+    margin-right: 0;
+  }
+
+  /* news */
+  .newsbox li .firstnews h4 {
+    height: 2.6em;
+  }
+
+  .newsbox li .firstnews p {
+    height: 10em;
+  }
+
+  .newsbox li .firstnews .newsphoto {
+    height: 9em;
+  }
+
+  .newsbox li .firstnews .newsphoto img {
+    width: auto;
+    height: 100%;
+  }
+
+  /* cs */
+  .sec_cs .cs_schBar {
+    width: 50%;
+  }
+
+  .sec_cs .notice_tab,
+  .sec_cs .faq_tab ul {
+    width: 80%;
+  }
+
+  .spamCon {
+    width: 80%;
+  }
+
+  /* falesite */
+  .falesite .subContent .faleNums .falesiteNum {
+    height: 23.12em;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum p {
+    margin-bottom: 0.5em;
+    font-size: 1.4rem;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum strong {
+    font-size: 1.4rem;
+  }
+
+  .falesite .subContent .faleNums .falesite01 {
+    background-size: 20%;
+    background-position: 95% 65%;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum .falesite01_txt ul li {
+    font-size: 1.5rem;
+  }
+
+  .falesite .subContent .faleNums .falesite02 {
+    background-size: 20%;
+    background-position: 95% 95%;
+  }
+
+  .falesite .subContent .faleNums .falesite03 {
+    background-size: 40%;
+    background-position: -20% 90%;
+  }
+
+  .falesite .faleExample ul li {
+    width: calc((100% - 0.62em) / 2);
+    margin-right: 0;
+  }
+
+  .falesite .faleExample ul li:nth-child(odd) {
+    margin-right: 0.62em;
+  }
+
+  /* corona */
+  .coGift ul li {
+    height: 20em;
+  }
+
+  /* voice */
+  .voiceTit ul li figure {
+    width: auto;
+    height: 100%;
+  }
+
+  .voiceTit ul li figure img {
+    height: 100%;
+  }
+
+  .voiceTit ul li .txtArea h5 {
+    font-size: 1.5rem;
+  }
+
+  .voiceTit ul li .txtArea p {
+    font-size: 1.1rem;
+  }
+
+  .voiceTit ul li .txtArea p br {
+    display: none;
+  }
+
+  .voiceGraph ul li.report {
+    width: 32.5%;
+  }
+
+  .voiceGraph ul li.report table th {
+    font-size: 1.3rem;
+  }
+
+  .voiceGraph ul li.report table td {
+    font-size: 1.6rem;
+  }
+
+  /* quizArea */
+  .quizArea .quiz_gift .event_date p {
+    font-size: 1.5rem;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift h5 {
+    font-size: 1.4rem;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift01 span {
+    right: 2em;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift02 span {
+    right: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  /* subVisTitle */
+  .subVisTitle.svt_system,
+  .subVisTitle.svt_premium,
+  .subVisTitle.svt_analysis,
+  .subVisTitle.svt_win,
+  .subVisTitle.svt_news,
+  .subVisTitle.svt_my,
+  .subVisTitle.svt_cs,
+  .subVisTitle.svt_corona,
+  .subVisTitle.svt_voice,
+  .subVisTitle.svt_quiz {
+    background-size: cover;
+  }
+
+  .subVisTitle h2 {
+    top: 55%;
+  }
+
+  /* subContentWrap */
+  .subContentWrap {
+    padding-top: 1em;
+  }
+
+  /* system */
+  .systemGrade ul {
+    margin-right: 0.62em;
+  }
+
+  .systemGrade ul li {
+    width: 6.5em;
+    height: 6.5em;
+    margin-left: -1em;
+  }
+
+  .systemGrade ul li .txtArea p {
+    font-size: 1.2rem;
+  }
+
+  .systemGrade ul li .txtArea h5 {
+    font-size: 1.2rem;
+  }
+
+  .systemGrade figure {
+    margin-right: 0.62em;
+  }
+
+  .systemGrade .txtBox {
+    width: 6.5em;
+    height: 6.5em;
+  }
+
+  .systemGrade .txtBox strong {
+    font-size: 1.2rem;
+  }
+
+  .systemLeft {
+    width: 100%;
+  }
+
+  .systemRight {
+    width: 100%;
+  }
+
+  .systemRight strong {
+    font-size: 1.5rem;
+    word-break: keep-all;
+  }
+
+  .systemRight strong br {
+    display: none;
+  }
+
+  .system01 ul li.series01 span {
+    display: block;
+  }
+
+  .system02 .systemRight ul li figure {
+    height: 7em;
+  }
+
+  .systemTheory ul li p {
+    font-size: 1.6rem;
+    word-break: keep-all;
+  }
+
+  .systemTheory ul li p br {
+    display: none;
+  }
+
+  .system06 ul li {
+    height: 18em;
+  }
+
+  .system06 ul li figure {
+    float: none;
+    width: 40%;
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+  .system06 .txtArea {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .system06 .txtArea p {
+    word-break: keep-all;
+  }
+
+  .system06 .txtArea p br {
+    display: none;
+  }
+
+  /* premium */
+  .classBox01 .caninfo {
+    padding: 0 0 0.8em;
+  }
+
+  .classBox .caninfo .rateing {
+    float: none;
+    width: 50%;
+    margin-bottom: 0.62em;
+  }
+
+  .classBox .caninfo .titBox {
+    float: none;
+    width: 100%;
+  }
+
+  .classBox .caninfo .titBox p.infotxt br {
+    display: none;
+  }
+
+  .classBox .caninfo>li.txtBox {
+    margin-top: 1.25em;
+  }
+
+  /* analysis */
+  .sticsPattern_tbl>ul>li {
+    float: left;
+    width: calc((100% - 0.62em) / 2);
+    margin-right: 0.62em;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(3n) {
+    margin-right: 0.62em;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(3),
+  .sticsPattern_tbl>ul>li:nth-child(4) {
+    margin-top: 0.62em;
+  }
+
+  .sticsSection_tbl .table_st2 thead td,
+  .sticsSection_tbl .table_st2 thead th {
+    font-size: 1.2rem;
+  }
+
+  .sticsSection_tbl .table_st2 tbody td,
+  .sticsSection_tbl .table_st2 tbody th {
+    font-size: 1.3rem;
+  }
+
+  .sticsSpread_tbl table {
+    table-layout: auto;
+  }
+
+  .sticsSpread_tbl table tbody th {
+    width: 4%;
+  }
+
+  .sticsSpread_tbl table tbody td {
+    width: calc(96% / 45);
+  }
+
+  .sticsSpread_tbl table tbody th,
+  .sticsSpread_tbl table tbody td {
+    line-height: 1.5;
+  }
+
+  .sec_statisticsTotal .statistics_area .ball_box .ball {
+    margin: 0 0.05em;
+  }
+
+  .sticsTotal_tbl li dl dt,
+  .sticsTotal_tbl li dl dd {
+    font-size: 1.3rem;
+    letter-spacing: -0.06em;
+  }
+
+  .sticsTotal_tbl .table_st2 caption {
+    font-size: 1.6rem;
+  }
+
+  .sticsTotal_tbl .table_st2 thead td,
+  .sticsTotal_tbl .table_st2 thead th,
+  .table_st2 tbody td,
+  .table_st2 tbody th {
+    font-size: 1.4rem;
+  }
+
+  /* board */
+  .interview_board .item_lst {
+    width: calc((100% - 1.86em) / 4);
+  }
+
+  .interview_board .item_lst:nth-child(-n + 6) {
+    margin-top: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(-n + 4) {
+    margin-top: 0;
+  }
+
+  .interview_board .item_lst:nth-child(6n) {
+    margin-right: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .interview_board .item_lst a .infoWrap .txt {
+    height: 5.1em;
+    word-break: break-all;
+  }
+
+  /* news */
+  .newsbox {
+    height: auto;
+  }
+
+  .newsbox>li {
+    float: none;
+  }
+
+  .newsbox .leftBox {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .newsbox li .firstnews h4 {
+    height: 2.6em;
+    font-size: 1.4rem;
+  }
+
+  .newsbox li .firstnews p {
+    -webkit-line-clamp: 5;
+    height: 7em;
+  }
+
+  .newsbox li .firstnews .newsphoto img {
+    width: auto;
+    height: 120%;
+  }
+
+  .newsWrap .rightBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .newsbox .rightBox>div {
+    width: calc(50% - 0.31em);
+    height: auto;
+    margin-right: 0.62em;
+  }
+
+  .newsWrap .rightbox02,
+  .rightbox01 {
+    height: auto;
+  }
+
+  .newsbox .rightBox .right02 {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .mediaboxWrap .newsslide {
+    height: auto;
+  }
+
+  .mediaboxWrap .newsslide .phototum {
+    height: 8em;
+  }
+
+  /* cs */
+  .sec_cs .cs_schBar {
+    width: 80%;
+  }
+
+  .sec_cs .notice_tab,
+  .sec_cs .faq_tab ul {
+    width: 100%;
+  }
+
+  .spamCon {
+    width: 80%;
+  }
+
+  .spamCon ul li h4 {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+  /* falesite */
+  .falesite .subContent .faleNums .falesiteNum {
+    width: 100%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum h3 {
+    font-size: 3.2rem;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum .falesite_txt {
+    position: relative;
+  }
+
+  .falesite .subContent .faleNums .falesite01 {
+    background-size: 20%;
+  }
+
+  .falesite .subContent .faleNums .falesite02 {
+    background-size: 15%;
+  }
+
+  .falesite .subContent .faleNums .falesite03 {
+    background-size: 40%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure {
+    width: 100%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure img {
+    width: 60%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesite05 {
+    height: auto;
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .subContent .faleNums .falesite06 {
+    height: 26em;
+  }
+
+  .falesite .faleExample ul li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .falesite .faleExample ul li:nth-child(4) {
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .faleExample ul li .examTxt {
+    height: auto;
+  }
+
+  .falesite .faleExample ul li .examTxt p {
+    padding-bottom: 0.62em;
+    font-size: 1.7rem;
+  }
+
+  /* corona */
+  .prevention .preventionBg {
+    height: 37.25em;
+  }
+
+  .prevention ul li {
+    width: calc((100% - 1.24em) / 2);
+  }
+
+  .prevention ul li:nth-child(3) {
+    margin-right: 0.62em;
+  }
+
+  .prevention ul li:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .coGift ul li {
+    height: 15em;
+  }
+
+  .coGift ul li h3 {
+    position: relative;
+    padding-top: 0.31em;
+  }
+
+  .coGift ul li.hand h3 {
+    right: 0;
+    text-align: left;
+  }
+
+  .coGift ul li.mask h3 {
+    position: absolute;
+    right: 0.62em;
+    text-align: right;
+  }
+
+  /* voice */
+  .voiceTit ul {
+    justify-content: left;
+  }
+
+  .voiceTit ul li {
+    width: calc((100% - 0.62em) / 2);
+  }
+
+  .voiceTit ul li figure {
+    width: 100%;
+    margin-right: 1.25em;
+  }
+
+  .voiceTit ul li:nth-child(1),
+  .voiceTit ul li:nth-child(2) {
+    margin-bottom: 0.62em;
+  }
+
+  .voiceTit ul li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .voiceTit ul li .txtArea h5 {
+    font-size: 1.6rem;
+  }
+
+  .voiceTit ul li .txtArea p {
+    font-size: 1.5rem;
+  }
+
+  .voiceTit ul li .txtArea p br {
+    display: none;
+  }
+
+  .voiceGraph ul {
+    display: block;
+  }
+
+  .voiceGraph ul li.situation {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .voiceGraph ul li.report {
+    position: relative;
+    width: 100%;
+  }
+
+  .voiceGraph ul li.report figure {
+    float: left;
+    width: 40%;
+    margin-right: 0.62em;
+    margin-bottom: 0;
+  }
+
+  .voiceGraph ul li.report table {
+    width: calc(60% - 0.62em);
+    position: absolute;
+    left: calc(40% + 0.62em);
+    bottom: 0;
+  }
+
+  .voiceGraph ul li.report table th {
+    font-size: 1.4rem;
+  }
+
+  .voiceGraph ul li.report table td {
+    font-size: 1.6rem;
+  }
+
+  /* quizArea */
+  .quizArea .quiz li h4 br {
+    display: none;
+  }
+
+  .quizArea .quiz_gift {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .quizArea .quiz_gift>div {
+    height: 15em;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 0.62em;
+    border: 1px solid #ccc;
+  }
+
+  .quizArea .quiz_gift>div:after {
+    display: none;
+  }
+
+  .quizArea .quiz_gift .event_date {
+    width: 35%;
+  }
+
+  .quizArea .quiz_gift .event_gift {
+    width: calc(65% + 1px);
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift h5 {
+    font-size: 1.5rem;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift01 span {
+    right: 2em;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift02 span {
+    right: 2em;
+  }
+
+  .quizArea .quiz_gift .event_detail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  /* my */
+  .table_st1 td:first-child,
+  .table_st1 th:first-child {
+    padding-left: 0.62em;
+  }
+
+  .table_st1 thead td,
+  .table_st1 thead th {
+    font-size: 1.3rem;
+  }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 768px) {
+
+  /* subVisTitle */
+  .subVisTitle.svt_system,
+  .subVisTitle.svt_premium,
+  .subVisTitle.svt_analysis,
+  .subVisTitle.svt_win,
+  .subVisTitle.svt_news,
+  .subVisTitle.svt_my,
+  .subVisTitle.svt_cs,
+  .subVisTitle.svt_corona,
+  .subVisTitle.svt_voice,
+  .subVisTitle.svt_quiz {
+    background-size: cover;
+  }
+
+  .subVisTitle h2 {
+    top: 55%;
+  }
+
+  /* subContentWrap */
+  .subContentWrap {
+    padding-top: 1em;
+  }
+
+  /* system */
+  .systemGrade .inner {
+    width: 80%;
+  }
+
+  .systemGrade .circleArea {
+    display: block;
+  }
+
+  .systemGrade ul {
+    float: none;
+    margin-right: 0;
+  }
+
+  .systemGrade ul li:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .systemGrade ul li:nth-child(3),
+  .systemGrade ul li:nth-child(4) {
+    margin-top: -1.87em;
+  }
+
+  .systemGrade figure {
+    float: none;
+    width: 10%;
+    height: 6em;
+    margin: 0 auto;
+  }
+
+  .systemGrade .txtBox {
+    float: none;
+    margin: 1em auto 0;
+  }
+
+  .systemLeft {
+    width: 100%;
+  }
+
+  .systemLeft p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+  .systemLeft p br {
+    display: none;
+  }
+
+  .systemRight {
+    width: 100%;
+  }
+
+  .systemRight strong {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .systemRight strong br {
+    display: none;
+  }
+
+  .systemRight img {
+    width: 100%;
+  }
+
+  .system01 ul li {
+    margin-bottom: 0.3em;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .system01 ul li span {
+    display: block;
+  }
+
+  .system02 .systemRight ul {
+    display: block;
+  }
+
+  .system02 .systemRight ul li {
+    width: 100%;
+    margin-bottom: 1.25em;
+  }
+
+  .system02 .systemRight ul li:first-child {
+    margin-right: 0;
+  }
+
+  .system02 .systemRight ul li figure {
+    width: 100%;
+    height: auto;
+  }
+
+  .system02 .systemRight ul li figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .systemTheory ul {
+    display: block;
+  }
+
+  .systemTheory ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.62em;
+    background: url('../_img/system_theory01.png') no-repeat right top / cover;
+  }
+
+  .systemTheory ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .systemTheory ul li h5 {
+    font-size: 2.2rem;
+  }
+
+  .systemTheory ul li p {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .systemTheory ul li p br {
+    display: none;
+  }
+
+  .system06 ul li {
+    float: none;
+    width: 100%;
+  }
+
+  .system06 ul li:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .system06 ul li.mb0 {
+    margin-bottom: 0.62em;
+  }
+
+  .system06 ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .system06 .txtArea p {
+    font-size: 1.6rem;
+    word-break: keep-all;
+  }
+
+  .system06 .txtArea p br {
+    display: none;
+  }
+
+  /* premium */
+  .classBox01 .caninfo {
+    padding: 0 0 0.8em;
+  }
+
+  .classBox .caninfo .rateing {
+    float: none;
+    width: 60%;
+    margin-bottom: 0.62em;
+  }
+
+  .classBox .caninfo .titBox {
+    float: none;
+    width: 100%;
+  }
+
+  .classBox .caninfo .titBox p.infotxt br {
+    display: none;
+  }
+
+  .classBox .caninfo>li.txtBox {
+    margin-top: 1.25em;
+  }
+
+  /* analysis */
+  .table_st2 tbody td {
+    font-size: 1.3rem;
+  }
+
+  .sticsPattern_tbl>ul>li {
+    float: left;
+    width: calc((100% - 0.62em) / 2);
+    margin-right: 0.62em;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(3n) {
+    margin-right: 0.62em;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .sticsPattern_tbl>ul>li:nth-child(3),
+  .sticsPattern_tbl>ul>li:nth-child(4) {
+    margin-top: 0.62em;
+  }
+
+  .sticsSection_tbl .table_st2 thead td,
+  .sticsSection_tbl .table_st2 thead th {
+    font-size: 1rem;
+    letter-spacing: -0.1em;
+    word-break: keep-all;
+  }
+
+  .sticsSection_tbl .table_st2 tbody td,
+  .sticsSection_tbl .table_st2 tbody th {
+    font-size: 1.3rem;
+  }
+
+  .sticsSpread_tbl table {
+    table-layout: auto;
+  }
+
+  .sticsSpread_tbl table thead th {
+    padding: 0.62em 0;
+    font-size: 1rem;
+    line-height: 0.9;
+  }
+
+  .sticsSpread_tbl table tbody th,
+  .sticsSpread_tbl table tbody td {
+    line-height: 1.4;
+  }
+
+  .sticsSpread_tbl table tbody th {
+    width: 4%;
+  }
+
+  .sticsSpread_tbl table tbody td {
+    width: calc(96% / 45);
+  }
+
+  .sec_statisticsTotal .statistics_area .ball_box .ball {
+    margin: 0 0.05em;
+  }
+
+  .sticsTotal_tbl li dl dt,
+  .sticsTotal_tbl li dl dd {
+    font-size: 1rem;
+    letter-spacing: -0.13em;
+  }
+
+  .sticsTotal_tbl li dl .rating2 {
+    display: none;
+  }
+
+  .sticsTotal_tbl .table_st2 caption {
+    font-size: 1.5rem;
+  }
+
+  .sticsTotal_tbl .table_st2 thead td,
+  .sticsTotal_tbl .table_st2 thead th,
+  .table_st2 tbody td,
+  .table_st2 tbody th {
+    font-size: 1.3rem;
+  }
+
+  /* board */
+  .interview_board .item_lst {
+    width: calc((100% - 1.24em) / 3);
+  }
+
+  .interview_board .item_lst:nth-child(-n + 6) {
+    margin-top: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(-n + 3) {
+    margin-top: 0;
+  }
+
+  .interview_board .item_lst:nth-child(6n) {
+    margin-right: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  /* news */
+  .newsbox {
+    height: auto;
+  }
+
+  .newsbox>li {
+    float: none;
+  }
+
+  .newsbox .leftBox {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .newsbox li .firstnews h4 {
+    height: 2.6em;
+    font-size: 1.4rem;
+  }
+
+  .newsbox li .firstnews p {
+    -webkit-line-clamp: 5;
+    height: 7em;
+  }
+
+  .newsbox li .firstnews .newsphoto img {
+    width: auto;
+    height: 120%;
+  }
+
+  .newsWrap .rightBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .newsbox .rightBox>div {
+    width: calc(50% - 0.31em);
+    height: auto;
+    margin-right: 0.62em;
+  }
+
+  .newsWrap .rightbox02,
+  .rightbox01 {
+    height: auto;
+  }
+
+  .newsbox .rightBox .right02 {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .mediaboxWrap .newsslide {
+    height: auto;
+  }
+
+  .mediaboxWrap .newsslide .phototum {
+    height: 8em;
+  }
+
+  /* cs */
+  .sec_cs .cs_schBar {
+    width: 80%;
+  }
+
+  .sec_cs .notice_tab,
+  .sec_cs .faq_tab ul {
+    width: 100%;
+  }
+
+  .spamCon {
+    width: 100%;
+  }
+
+  /* falesite */
+  .falesite .subContent .faleNums .falesiteNum {
+    width: 100%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum h3 {
+    font-size: 3.2rem;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum .falesite_txt {
+    position: relative;
+  }
+
+  .falesite .subContent .faleNums .falesite01 {
+    background-size: 20%;
+  }
+
+  .falesite .subContent .faleNums .falesite02 {
+    background-size: 15%;
+  }
+
+  .falesite .subContent .faleNums .falesite03 {
+    background-size: 40%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure {
+    width: 100%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure img {
+    width: 60%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesite05 {
+    height: auto;
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .subContent .faleNums .falesite06 {
+    height: 26em;
+  }
+
+  .falesite .faleExample ul li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .falesite .faleExample ul li:nth-child(4) {
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .faleExample ul li .examTxt {
+    height: auto;
+  }
+
+  .falesite .faleExample ul li .examTxt p {
+    padding-bottom: 0.62em;
+    font-size: 1.7rem;
+  }
+
+  /* corona */
+  .prevention .preventionBg {
+    height: 71.75em;
+  }
+
+  .prevention ul {
+    display: block;
+  }
+
+  .prevention ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .prevention ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .coGift ul {
+    display: block;
+  }
+
+  .coGift ul li {
+    width: 100%;
+    height: 22em;
+  }
+
+  .coGift ul li h3 {
+    position: relative;
+    padding-top: 0.62em;
+  }
+
+  .coGift ul li.hand h3 {
+    right: 0;
+    text-align: left;
+  }
+
+  .coGift ul li.mask h3 {
+    text-align: right;
+  }
+
+  /* voice */
+  .voiceTit h4 {
+    font-size: 1.8rem;
+  }
+
+  .voiceTit ul {
+    justify-content: left;
+  }
+
+  .voiceTit ul li {
+    width: calc((100% - 0.62em) / 2);
+  }
+
+  .voiceTit ul li figure {
+    width: 100%;
+    margin-right: 1.25em;
+  }
+
+  .voiceTit ul li:nth-child(1),
+  .voiceTit ul li:nth-child(2) {
+    margin-bottom: 0.62em;
+  }
+
+  .voiceTit ul li:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .voiceTit ul li .txtArea h5 {
+    font-size: 1.4rem;
+  }
+
+  .voiceTit ul li .txtArea p {
+    font-size: 1.3rem;
+  }
+
+  .voiceTit ul li .txtArea p br {
+    display: none;
+  }
+
+  .voiceGraph ul {
+    display: block;
+  }
+
+  .voiceGraph ul li.situation {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .voiceGraph ul li.report {
+    position: relative;
+    width: 100%;
+  }
+
+  .voiceGraph ul li.report figure {
+    float: left;
+    width: 40%;
+    margin-right: 0.62em;
+    margin-bottom: 0;
+  }
+
+  .voiceGraph ul li.report table {
+    width: calc(60% - 0.62em);
+    position: absolute;
+    left: calc(40% + 0.62em);
+    bottom: 0;
+  }
+
+  .voiceGraph ul li.report table th {
+    font-size: 1.4rem;
+  }
+
+  .voiceGraph ul li.report table td {
+    font-size: 1.6rem;
+  }
+
+  /* quizArea */
+  .quizArea .quiz li h4 br {
+    display: none;
+  }
+
+  .quizArea .numWrite .numWriteDetail {
+    display: block;
+  }
+
+  .quizArea .numWrite .numWriteDetail label {
+    display: inline-block;
+    width: 7em;
+  }
+
+  .quizArea .numWrite .numWriteDetail #perName {
+    margin-right: 0;
+    margin-bottom: 0.62em;
+  }
+
+  .quizArea .quiz_gift {
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .quizArea .quiz_gift>div {
+    height: 15em;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 0.62em;
+    border: 1px solid #ccc;
+  }
+
+  .quizArea .quiz_gift>div:after {
+    display: none;
+  }
+
+  .quizArea .quiz_gift .event_date {
+    width: 35%;
+  }
+
+  .quizArea .quiz_gift .event_date p {
+    font-size: 1.6rem;
+  }
+
+  .quizArea .quiz_gift .event_gift {
+    width: calc(65% + 1px);
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift h5 {
+    font-size: 1.4rem;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift01 span {
+    right: 2em;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift02 span {
+    right: 2em;
+  }
+
+  .quizArea .quiz_gift .event_detail {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  /* my */
+  .my_menuW ul li .side_subMenuW li a {
+    padding: 0 0.31em 0 1.25em;
+    font-size: 1.2rem;
+  }
+
+  .my_tableW .ball_box .ball {
+    margin: 0 0.12em;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  /* subVisTitle */
+  .subVisTitle {
+    margin-top: 4em;
+  }
+
+  .subVisTitle.svt_system,
+  .subVisTitle.svt_premium,
+  .subVisTitle.svt_analysis,
+  .subVisTitle.svt_win,
+  .subVisTitle.svt_news,
+  .subVisTitle.svt_my,
+  .subVisTitle.svt_cs,
+  .subVisTitle.svt_corona,
+  .subVisTitle.svt_voice,
+  .subVisTitle.svt_quiz {
+    background-size: cover;
+  }
+
+  .subVisTitle h2 {
+    top: 45%;
+    width: 80%;
+    word-break: keep-all;
+  }
+
+  /* subContentWrap */
+  .subContentWrap {
+    padding-top: 1.5em;
+  }
+
+  .subContentWrap .contentLeft {
+    float: none;
+    display: none;
+    width: 100%;
+  }
+
+  .analysisCon .subContentWrap .contentLeft,
+  .winCon .subContentWrap .contentLeft,
+  .myCon .subContentWrap .contentLeft,
+  .csCon .subContentWrap .contentLeft {
+    display: block;
+  }
+
+  .subContentWrap .contentLeft .leftMenu {
+    margin-bottom: 1.5em;
+    border: 0;
+  }
+
+  .subContentWrap .contentLeft .leftMenu .leftMenuTit {
+    display: none;
+  }
+
+  .subContentWrap .contentLeft .leftMenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .subContentWrap .contentLeft .leftMenu ul li {
+    border: 1px solid #ccc;
+    margin: -1px -1px 0 0;
+  }
+
+  .analysisCon .contentLeft .leftMenu ul li,
+  .myCon .contentLeft .leftMenu ul li {
+    width: 33.48%;
+  }
+
+  .winCon .contentLeft .leftMenu ul li {
+    width: 50.1%;
+  }
+
+  .csCon .subContentWrap .contentLeft ul li {
+    width: 25.16%;
+  }
+
+  .subContentWrap .contentLeft .leftMenu ul li:last-child {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .subContentWrap .contentLeft .leftMenu ul li a {
+    padding: 1em 0;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  .subContentWrap .contentLeft .leftMenu ul li a:after {
+    display: none;
+  }
+
+  .subContentWrap .contentLeft .subleftLotto {
+    display: none;
+  }
+
+  .subContentWrap .contentRight {
+    float: none;
+    width: 100%;
+  }
+
+  /* system */
+  .system h4 {
+    font-size: 2.8rem;
+  }
+
+  .systemGrade {
+    padding: 1.25em 0;
+  }
+
+  .systemGrade .inner {
+    width: 100%;
+  }
+
+  .systemGrade .circleArea {
+    display: block;
+  }
+
+  .systemGrade ul {
+    float: none;
+    margin-right: 0;
+  }
+
+  .systemGrade ul li:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .systemGrade ul li:nth-child(3),
+  .systemGrade ul li:nth-child(4) {
+    margin-top: -1.87em;
+  }
+
+  .systemGrade figure {
+    float: none;
+    width: 10%;
+    height: 6em;
+    margin: 0 auto;
+  }
+
+  .systemGrade .txtBox {
+    float: none;
+    margin: 1em auto 0;
+  }
+
+  .systemLeft {
+    width: 100%;
+  }
+
+  .systemLeft p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+  }
+
+  .systemLeft p br {
+    display: none;
+  }
+
+  .systemRight {
+    width: 100%;
+  }
+
+  .systemRight strong {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .systemRight strong br {
+    display: none;
+  }
+
+  .systemRight img {
+    width: 100%;
+  }
+
+  .system01 ul li {
+    margin-bottom: 0.3em;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    word-break: keep-all;
+  }
+
+  .system01 ul li span {
+    display: block;
+  }
+
+  .system02 .systemRight ul {
+    display: block;
+  }
+
+  .system02 .systemRight ul li {
+    width: 100%;
+    margin-bottom: 1.25em;
+  }
+
+  .system02 .systemRight ul li:first-child {
+    margin-right: 0;
+  }
+
+  .system02 .systemRight ul li figure {
+    width: 100%;
+    height: auto;
+  }
+
+  .system02 .systemRight ul li figure img {
+    width: 100%;
+    height: auto;
+  }
+
+  .systemTheory ul {
+    display: block;
+  }
+
+  .systemTheory ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.62em;
+    background: url('../_img/system_theory01.png') no-repeat right top / cover;
+  }
+
+  .systemTheory ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .systemTheory ul li h5 {
+    font-size: 2.2rem;
+  }
+
+  .systemTheory ul li p {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .systemTheory ul li p br {
+    display: none;
+  }
+
+  .system06 ul li {
+    float: none;
+    width: 100%;
+  }
+
+  .system06 ul li:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .system06 ul li.mb0 {
+    margin-bottom: 0.62em;
+  }
+
+  .system06 ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .system06 .txtArea p {
+    font-size: 1.6rem;
+    word-break: keep-all;
+  }
+
+  .system06 .txtArea p br {
+    display: none;
+  }
+
+  /* premium */
+  .classBox01 .caninfo {
+    padding: 0 0 0.62em;
+  }
+
+  .classBox .caninfo .rateing {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.25em;
+  }
+
+  .classBox .caninfo .titBox {
+    float: none;
+    width: 100%;
+  }
+
+  .classBox .caninfo .titBox h2 {
+    font-size: 3rem;
+  }
+
+  .classBox .caninfo .titBox p.infotxt {
+    font-size: 1.8rem;
+    word-break: keep-all;
+  }
+
+  .classBox .caninfo .titBox p.infotxt br {
+    display: none;
+  }
+
+  .classBox .caninfo .titBox ul {
+    margin-top: 0.8em;
+  }
+
+  .classBox .caninfo .titBox ul li {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .classBox .caninfo .txtBox {
+    margin-top: 1.25em;
+  }
+
+  .classBox .caninfo .txtBox .txtDetail {
+    float: none;
+  }
+
+  .classBox .caninfo .txtBox .infoBox {
+    float: none;
+  }
+
+  .classBox .caninfo .txtBox .infoBox span.material-icons {
+    padding: 0 0.31em;
+  }
+
+  .classBox .caninfo .txtBox h4 {
+    margin-bottom: 0.1em;
+  }
+
+  .classBox .caninfo .txtBox .joinbtn {
+    margin-top: 1.25em;
+  }
+
+  .treatyBox pre {
+    margin-left: -1.93em;
+  }
+
+  .movebtn {
+    width: 8.37em;
+    font-size: 2rem;
+  }
+
+  .movebtn .movearrow {
+    top: 1.1em;
+    right: 0.3em;
+    width: 2em;
+    height: 1em;
+  }
+
+  /* analysis */
+  .table_st2 tbody td,
+  .table_st2 tbody th {
+    font-size: 1.2rem;
+  }
+
+  .statistics_area .ball_box .ball {
+    margin: 0 0.1em;
+  }
+
+  .sticsPattern_tbl>ul>li {
+    float: left;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.62em;
+  }
+
+  .sticsPattern_tbl>ul>li:first-child {
+    margin-top: 0;
+  }
+
+  .sticsPattern_tbl li .ptBox .tbl ul li span {
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.1;
+  }
+
+  .sticsSection_tbl .table_st2 thead td,
+  .sticsSection_tbl .table_st2 thead th {
+    font-size: 1.2rem;
+    padding: 1.25em 0.62em;
+    word-break: keep-all;
+  }
+
+  .sticsSection_tbl .table_st2 tbody td,
+  .sticsSection_tbl .table_st2 tbody th {
+    font-size: 1.3rem;
+  }
+
+  .sticsSpread_tbl table {
+    table-layout: auto;
+  }
+
+  .sticsSpread_tbl table thead th {
+    padding: 0.62em 0;
+    font-size: 1rem;
+    line-height: 0.9;
+  }
+
+  .sticsSpread_tbl table tbody th,
+  .sticsSpread_tbl table tbody td {
+    line-height: 1.3;
+  }
+
+  .sticsSpread_tbl table tbody th {
+    width: 5%;
+  }
+
+  .sticsSpread_tbl table tbody td {
+    width: calc(95% / 45);
+  }
+
+  .sticsTotal_tbl li dl dt,
+  .sticsTotal_tbl li dl dd {
+    font-size: 1rem;
+    letter-spacing: -0.06em;
+  }
+
+  .sticsTotal_tbl li dl .th {
+    width: 12%;
+  }
+
+  .sticsTotal_tbl li dl dd.data {
+    width: 20%;
+    font-size: 1rem;
+  }
+
+  .sticsTotal_tbl li dl .rating1 {
+    width: 9%;
+  }
+
+  .sticsTotal_tbl li dl .rating2 {
+    display: none;
+  }
+
+  .sticsTotal_tbl li dl .prc {
+    display: none;
+  }
+
+  .sec_statisticsTotal .statistics_area .ball_box .ball {
+    margin: 0 0.03em;
+  }
+
+  /* board */
+  .table_st3 td {
+    padding: 0.62em;
+    font-size: 1.6rem;
+  }
+
+  .board_write .inputWrap_st1 input {
+    padding: 0.62em 0.62em 0.62em 1.25em;
+    font-size: 1.7rem;
+  }
+
+  .textareaWrap_st1 textarea {
+    padding: 1.25em 0.62em 0.62em 1.25em;
+    font-size: 1.7rem;
+  }
+
+  .interview_view .view_tit .tit {
+    font-size: 2.8rem;
+  }
+
+  .interview_view .view_btn li a {
+    font-size: 1.7rem;
+  }
+
+  .interview_view .view_con p {
+    font-size: 1.7rem;
+    word-break: keep-all;
+  }
+
+  .interview_view .view_con p br {
+    display: none;
+  }
+
+  .interview_comment .cmt_list li .cmt_txt .cmt_info span {
+    font-size: 1.6rem;
+  }
+
+  .interview_comment .cmt_list li .cmt_txt p {
+    font-size: 1.5rem;
+  }
+
+  .interview_board .item_lst {
+    width: calc((100% - 0.62em) / 2);
+    margin-right: 0.62em;
+    margin-top: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(-n + 6) {
+    margin-top: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+
+  .interview_board .item_lst:nth-child(6n) {
+    margin-right: 0.62em;
+  }
+
+  .interview_board .item_lst:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .interview_board .item_lst a .infoWrap .tit {
+    font-size: 1.8rem;
+  }
+
+  .interview_board .item_lst a .infoWrap .txt {
+    font-size: 1.7rem;
+  }
+
+  /* news */
+  .newsbox {
+    height: auto;
+  }
+
+  .newsbox>li {
+    float: none;
+    width: 100%;
+  }
+
+  h3.newstit {
+    padding: 0.62em;
+    padding-bottom: 0;
+    border-bottom: 0;
+    box-shadow: none;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .newsbox .leftBox {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .newsbox li .firstnews {
+    float: none;
+    width: 100%;
+    padding: 0.62em;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+  }
+
+  .newsbox li .firstnews.firstnews_first {
+    margin-left: 0;
+  }
+
+  .newsbox li .firstnews h4 {
+    font-size: 2rem;
+  }
+
+  .newsbox li .firstnews p {
+    -webkit-line-clamp: 5;
+    height: 7em;
+    font-size: 1.7rem;
+  }
+
+  .newsbox li .firstnews .newsphoto {
+    height: 15em;
+  }
+
+  .newsbox li .firstnews .newsphoto img {
+    width: 100%;
+    height: auto;
+  }
+
+  .newsbox li .newslist li a {
+    font-size: 1.7rem;
+  }
+
+  .newsWrap .rightBox {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .newsbox .rightBox>div {
+    width: 100%;
+    height: auto;
+    margin-right: 0.62em;
+  }
+
+  .newsbox .rightBox .right01 {
+    margin-bottom: 0.62em;
+  }
+
+  .newsWrap .rightbox02,
+  .rightbox01 {
+    height: auto;
+  }
+
+  .newsbox .rightBox .right02 {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .newsWrap .rightBox li a {
+    font-size: 1.7rem;
+  }
+
+  .mediaboxWrap .newsslide {
+    height: auto;
+  }
+
+  .mediaboxWrap .newsslide .phototum {
+    height: 9em;
+  }
+
+  /* cs */
+  .sec_cs .cs_schBar {
+    width: 80%;
+  }
+
+  .sec_cs .notice_tab,
+  .sec_cs .faq_tab ul {
+    width: 100%;
+  }
+
+  .spamCon {
+    width: 100%;
+  }
+
+  .spamCon .spamTit h4 {
+    font-size: 1.8rem;
+  }
+
+  .spamCon .spamTit p {
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+
+  .spamCon ul li h4 {
+    font-size: 2rem;
+    line-height: 1.3;
+  }
+
+  /* auth */
+  .auth header {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .auth header .logo {
+    position: static;
+    transform: translate(0, 0);
+    height: 3.5em;
+  }
+
+  .auth .inputWrap_st2.icon input {
+    padding-left: 4.8em;
+  }
+
+  .auth .checksWrap_st1 label {
+    background-size: 25%;
+  }
+
+  .auth .inputWrap_st2.icon:before {
+    background-size: 1000%;
+  }
+
+  .auth .inputWrap_st2.icon.uid:before {
+    background-position: -1.2em -1.1em;
+  }
+
+  .auth .inputWrap_st2.icon.upw:before {
+    background-position: -8.7em -1.1em;
+  }
+
+  .auth .inputWrap_st2.icon.upw2:before {
+    background-position: -16em -1.1em;
+  }
+
+  .auth .inputWrap_st2.icon.nick:before {
+    background-position: -38.7em -1.1em;
+  }
+
+  .auth .inputWrap_st2.icon.email:before {
+    background-position: -31.2em -1.1em;
+  }
+
+  .auth .inputWrap_st2.icon.phone:before {
+    background-position: -23.75em -1.1em;
+  }
+
+  .auth .checksWrap_st2 .checks label {
+    background-size: 13%;
+  }
+
+  /* falesite */
+  .falesite .subContent .faleNums .falesiteNum {
+    width: 100%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum:nth-child(odd) {
+    margin-left: 0;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum h3 {
+    font-size: 3.2rem;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum .falesite_txt {
+    position: relative;
+  }
+
+  .falesite .subContent .faleNums .falesite01 {
+    background-size: 20%;
+  }
+
+  .falesite .subContent .faleNums .falesite02 {
+    background-size: 15%;
+  }
+
+  .falesite .subContent .faleNums .falesite03 {
+    background-size: 40%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure {
+    width: 100%;
+  }
+
+  .falesite .subContent .faleNums .falesite04 figure img {
+    width: 60%;
+    height: auto;
+  }
+
+  .falesite .subContent .faleNums .falesite05 {
+    height: auto;
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .subContent .faleNums .falesite06 {
+    height: 26em;
+  }
+
+  .falesite .faleExample ul li {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .falesite .faleExample ul li:nth-child(4) {
+    margin-bottom: 0.62em;
+  }
+
+  .falesite .faleExample ul li .examTxt {
+    height: auto;
+  }
+
+  .falesite .faleExample ul li .examTxt p {
+    padding-bottom: 0.62em;
+    font-size: 1.7rem;
+  }
+
+  /* corona */
+  .prevention .preventionBg {
+    height: 71.75em;
+  }
+
+  .prevention ul {
+    display: block;
+  }
+
+  .prevention ul li {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .prevention ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .coGift ul {
+    display: block;
+  }
+
+  .coGift ul li {
+    width: 100%;
+    height: 22em;
+  }
+
+  .coGift ul li h3 {
+    position: relative;
+    padding-top: 0.62em;
+  }
+
+  .coGift ul li.hand h3 {
+    right: 0;
+    text-align: left;
+  }
+
+  .coGift ul li.mask h3 {
+    text-align: right;
+  }
+
+  /* voice */
+  .voiceTit h4 br {
+    display: none;
+  }
+
+  .voiceTit ul {
+    display: block;
+  }
+
+  .voiceTit ul li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.62em;
+  }
+
+  .voiceTit ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .voiceGraph ul {
+    display: block;
+  }
+
+  .voiceGraph ul li {
+    width: 100%;
+  }
+
+  .voiceGraph ul li h4 {
+    font-size: 2.2rem;
+  }
+
+  .voiceGraph ul li.situation {
+    width: 100%;
+    margin-bottom: 0.62em;
+  }
+
+  .voiceGraph ul li.situation .imgArea {
+    display: block;
+  }
+
+  .voiceGraph ul li.situation .imgArea figure:first-child {
+    margin-right: 0;
+    margin-bottom: 0.62em;
+  }
+
+  .voiceGraph ul li.report {
+    width: 100%;
+  }
+
+  .voiceGraph ul li.report figure {
+    width: 100%;
+  }
+
+  /* quizArea */
+  .quizArea .quiz li h4 br {
+    display: none;
+  }
+
+  .quizArea .numWrite .numWriteDetail {
+    display: block;
+  }
+
+  .quizArea .numWrite .numWriteDetail label {
+    display: inline-block;
+    width: 7em;
+  }
+
+  .quizArea .numWrite .numWriteDetail input {
+    width: 16em;
+    font-size: 1.5rem;
+  }
+
+  .quizArea .numWrite .numWriteDetail #perName {
+    margin-right: 0;
+    margin-bottom: 0.62em;
+  }
+
+  .quizArea .quiz_gift {
+    margin-bottom: 0;
+  }
+
+  .quizArea .quiz_gift>div {
+    height: auto;
+    padding: 0.62em;
+  }
+
+  .quizArea .quiz_gift>div:after {
+    display: none;
+  }
+
+  .quizArea .quiz_gift .event_date,
+  .quizArea .quiz_gift .event_gift,
+  .quizArea .quiz_gift .event_detail {
+    float: none;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift01 span {
+    right: 3.06em;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift02 span {
+    right: 3.37em;
+  }
+
+  .quizArea .quiz_gift .event_detail {
+    border-bottom: 0;
+  }
+
+  /* my */
+  .sec_mypage .my_sidebar .my_profileW {
+    float: none;
+    width: 100%;
+  }
+
+  .my_profileW .my_p_icon img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .my_menuW ul li .side_subMenuW {
+    padding-left: 0.62em;
+  }
+
+  .my_menuW ul li .side_subMenuW li a {
+    font-size: 1.7rem;
+  }
+
+  .my_menuW {
+    float: none;
+    width: 100%;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  .my_menuW>ul>li>a {
+    font-size: 1.8rem;
+  }
+
+  .my_box_titW h2 {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  .my_tabW ul li a {
+    font-size: 1.6rem;
+  }
+
+  .table_st1 thead td,
+  .table_st1 thead th {
+    padding: 1em 0.31em;
+  }
+
+  .table_st1 td:first-child,
+  .table_st1 th:first-child {
+    padding-left: 0.31em;
+  }
+
+  .my_tableW .table_st1 tbody td {
+    font-size: 1.5rem;
+    letter-spacing: -0.09em;
+  }
+
+  .my_tableW .ball_box {
+    width: auto;
+  }
+
+  .my_tableW .ball_box .ball {
+    margin: 0 0.12em;
+  }
+
+  .table_st4 th {
+    word-break: keep-all;
+  }
+
+  .btnPhoneN {
+    line-height: 2.6;
+  }
+
+  .my_infoBox ul li {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media screen and (min-width: 441px) and (max-width: 640px) {
+
+  /* system */
+  .systemGrade .inner {
+    width: 65%;
+  }
+}
+
+
+@media screen and (max-width: 300px) {
+
+  /* subVisTitle */
+  .subVisTitle h2 {
+    font-size: 2.2rem;
+  }
+
+  .subVisTitle h2 span {
+    font-size: 1.7rem;
+  }
+
+  /* premium */
+  .treatyBox {
+    padding: 1.5em 0;
+  }
+
+  .treatyBox pre {
+    margin-left: -3.3em;
+  }
+
+  .movebtn {
+    width: 9em;
+    line-height: 2.5em;
+  }
+
+  .movebtn .movearrow {
+    top: 0.8em;
+    right: 0.8em;
+  }
+
+  /* analysis */
+  .sticsPattern_tbl li .ptBox .tbl ul li span {
+    width: 2.8em;
+    height: 2.8em;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .sticsSection_tbl .table_st2 thead td,
+  .sticsSection_tbl .table_st2 thead th {
+    font-size: 1.2rem;
+    word-break: break-all;
+  }
+
+  .sticsSpread_tbl table tbody th {
+    line-height: 1.2;
+  }
+
+  .sticsTotal_tbl li dl .th {
+    width: 17%;
+  }
+
+  .sticsTotal_tbl li dl dd.data {
+    width: 22%;
+    font-size: 1rem;
+  }
+
+  .sticsTotal_tbl li dl .rating2 {
+    display: none;
+  }
+
+  .sticsTotal_tbl li dl .prc {
+    display: none;
+  }
+
+  /* board */
+  .interview_view .view_con figure img {
+    width: 100%;
+  }
+
+  .interview_view .view_btn li.prev a:before,
+  .interview_view .view_btn li.next a:before {
+    top: 50%;
+    font-size: 2.4rem;
+  }
+
+  .interview_board .item_lst a .infoWrap .txt {
+    height: 6.1em;
+  }
+
+  /* auth */
+  .auth .inputWrap_st2 button {
+    width: 12.5em;
+    height: 4em;
+    margin-top: -2em;
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  /* falesite */
+  .falesite .subContent .faleNums .falesiteNum p {
+    word-break: keep-all;
+  }
+
+  .falesite .subContent .faleNums .falesiteNum p br {
+    display: none;
+  }
+
+  .falesite .faleExample ul li .examTxt p br {
+    word-break: keep-all;
+  }
+
+  .falesite .faleExample ul li .examTxt p br {
+    display: none;
+  }
+
+  .falesite .subContent .faleNums .falesite01,
+  .falesite .subContent .faleNums .falesite02,
+  .falesite .subContent .faleNums .falesite03,
+  .falesite .subContent .faleNums .falesite06 {
+    background: none;
+  }
+
+  .falesite .subContent .faleNums .falesite05 {
+    height: 27.3em;
+  }
+
+  /* corona */
+  .prevention .preventionBg {
+    height: 73.75em;
+  }
+
+  .guideBox h4 {
+    width: 20%;
+  }
+
+  .guideBox p {
+    width: 80%;
+  }
+
+  .quizArea .numWrite .numWriteDetail input {
+    width: 18em;
+    font-size: 1.5rem;
+  }
+
+  .quizArea .quiz_gift .event_gift .giftPhoto .gift span {
+    width: 4em;
+    height: 4em;
+    font-size: 1.3rem;
+    line-height: 2.6;
+  }
+
+  /* my */
+  .table_st1 thead td,
+  .table_st1 thead th {
+    font-size: 1.4rem;
+    word-break: keep-all;
+  }
+
+  .my_tableW .table_st .noto tr th {
+    font-size: 1.2rem;
+  }
+
+  .my_tabW ul li .turn_info {
+    padding: 0 0.62em;
+    background-position: 5em;
+  }
+}

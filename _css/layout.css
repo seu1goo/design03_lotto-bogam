@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/* layout */
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url("../_img/main_bg.png") no-repeat center / cover;
+  overflow-x: hidden;
+  font-family: 'Lato', 'Noto Sans KR', sans-serif !important;
+  font-size: 1.6rem !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.05em;
+  color: #555;
+}
+
+section {
+  margin-bottom: 1.25em !important;
+}
+
+#wrap {
+  width: 100%;
+}
+
+.inner {
+  position: relative;
+  width: 100em;
+  height: 100%;
+  margin: auto;
+}
+
+/* header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 9;
+}
+
+header .inner {
+  padding-top: 1.56em;
+}
+
+header .logo {
+  float: left;
+  width: 11.31em;
+  height: 2.68em;
+  margin-right: 5em;
+}
+
+header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .logo a img {
+  width: 100%;
+}
+
+header .mobOpen {
+  display: none;
+}
+
+header .mobTit {
+  display: none;
+}
+
+header nav {
+  float: left;
+  margin-top: 0.31em;
+}
+
+header nav .gnb>li {
+  position: relative;
+  float: left;
+  width: 8.12em;
+  height: 2.37em;
+  padding: 0.5em 0 1.25em;
+  line-height: 2.3em;
+}
+
+header nav .gnb>li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 3em;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  box-sizing: content-box;
+}
+
+header nav .gnb>li .sub {
+  position: absolute;
+  top: 4.37em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+header nav .gnb>li:hover .sub,
+header nav .gnb>li:focus .sub {
+  display: block;
+  padding-bottom: 1.87em;
+}
+
+header nav .gnb>li .sub li {
+  width: 11.25em;
+  height: 3.12em;
+  padding: 0.31em 0 1.25em;
+  background-color: #fbfbf7;
+}
+
+header nav .gnb>li .sub li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  color: #777;
+  transition: all 0.6s;
+}
+
+header nav .gnb>li .sub li a:hover,
+header nav .gnb>li .sub li a:focus {
+  color: #222;
+  text-decoration: underline;
+}
+
+header .tnb {
+  float: right;
+}
+
+header .tnb li {
+  position: relative;
+  float: left;
+  margin-left: 1.25em;
+}
+
+header .tnb li:first-child {
+  margin-left: 0;
+}
+
+header .tnb li::before {
+  content: '';
+  position: absolute;
+  top: 0.18em;
+  left: -0.62em;
+  width: 0.12em;
+  height: 0.93em;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+header .tnb li:first-child::before {
+  display: none;
+}
+
+header .tnb li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  opacity: 0.85;
+  transition: 0.3s;
+}
+
+header .tnb li a:hover,
+header .tnb li a:focus {
+  opacity: 1;
+}
+
+/* footer */
+footer {
+  margin-top: 0.62em;
+}
+
+footer .footMenu {
+  height: 3.12em;
+  line-height: 3.12em;
+  background-color: #d2cfbf;
+}
+
+footer .footMenu ul li {
+  float: left;
+  margin-right: 1.25em;
+}
+
+footer .footMenu ul li a {
+  font-weight: 600;
+  color: #666;
+}
+
+footer .footMenu ul li a:hover,
+footer .footMenu ul li a:focus {
+  text-decoration: underline;
+  color: #333;
+}
+
+footer .footArea {
+  padding: 1.25em 0 3.75em;
+}
+
+footer .footArea .footLogo {
+  float: left;
+  width: 11.31em;
+  height: 2.68em;
+  margin-right: 1.25em;
+}
+
+footer .footArea .footLogo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+footer .footArea .footLogo a img {
+  width: 100%;
+}
+
+footer .footArea .footCopy {
+  float: left;
+}
+
+footer .footArea .footCopy>li {
+  float: left;
+  margin-right: 1.25em;
+}
+
+footer .footArea .footCopy>li:last-child {
+  margin-right: 0;
+}
+
+footer .footArea .footCopy>li h4 {
+  margin-bottom: 0.66em;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+footer .footArea .footCopy>li>ul>li {
+  font-size: 1.5rem;
+  margin-bottom: 0.53em;
+}
+
+footer .footArea .footCopy .customer .footTel {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: -0.31em;
+}
+
+footer .footArea .footCopy>li>ul>li span {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-right: 0.53em;
+  color: #444;
+}
+
+footer .footArea .footCopy>li>ul>li .lfPadd {
+  padding-left: 0.62em;
+}
+
+/* to-top */
+#to-top {
+  position: fixed;
+  bottom: 1.87em;
+  right: 1.87em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.75em;
+  height: 3.75em;
+  background-color: #a4000c;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 8;
+}
